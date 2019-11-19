@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="16dp">
+
+        <View
+            android:id="@+id/baseline"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/IV_User"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/myuser" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/baseline"
+            android:layout_toRightOf="@+id/IV_User"
+            android:layout_marginBottom="1dp"
+            android:text="张三"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/IV_User"
+            android:layout_below="@id/baseline"
+            android:layout_marginTop="1dp"
+            android:text="账号: 001"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:gravity="center_vertical|left"
+            android:padding="18dp"
+            android:text="全部任务"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <com.iplant.presenter.view.widget.ToggleButton
+            android:id="@+id/tbtn_Persontask"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:gravity="center_vertical|right"
+            android:clickable="true"
+            android:layout_gravity="center"
+         />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup_Shift"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+    <RadioButton
+        android:id="@+id/radioButton_PreviousShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="上一班次"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:buttonTint="#FFFFFF"
+      />
+
+    <RadioButton
+        android:id="@+id/radioButton_CurrentShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="当前班次"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:buttonTint="#FFFFFF"
+         />
+
+    <RadioButton
+        android:id="@+id/radioButton_NextShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="下一班次"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:buttonTint="#FFFFFF"
+
+         />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

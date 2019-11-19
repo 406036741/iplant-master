@@ -1,0 +1,191 @@
+<com.iplant.presenter.view.Layout.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp">
+
+        <include
+            layout="@layout/mine"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.iplant.presenter.view.Layout.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+
+            <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_weight="100"
+                android:layout_height="match_parent">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/HomeBackground">
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/tabgridView1"
+                                layout="@layout/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/tabgridView2"
+                                layout="@layout/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/tabgridView3"
+                                layout="@layout/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/tabgridView4"
+                                layout="@layout/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                            <include
+                                android:id="@+id/tabgridView5"
+                                layout="@layout/grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />"
+                        </LinearLayout>
+                    </FrameLayout>
+                </ScrollView>
+            </TabHost>
+
+
+            <!--   我只是一条线 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line"></LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:background="@color/HomeBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/footer_itembg_selector"
+                    android:checked="true"
+                    android:drawableTop="@drawable/footer_favorite_selector"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/footer_itembg_selector"
+                    android:drawableTop="@drawable/footer_message_selector"
+
+                    android:button="@null"
+                   />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/footer_itembg_selector"
+                    android:drawableTop="@drawable/footer_task_selector"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/footer_itembg_selector"
+                    android:drawableTop="@drawable/footer_factory_selector"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radio_5"
+                    style="@style/main_tab_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/footer_itembg_selector"
+                    android:drawableTop="@drawable/footer_report_selector"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+    </com.iplant.presenter.view.Layout.MyRelativeLayout>
+</com.iplant.presenter.view.Layout.DragLayout>

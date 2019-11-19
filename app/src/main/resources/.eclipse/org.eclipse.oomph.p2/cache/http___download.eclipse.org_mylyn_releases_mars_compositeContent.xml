@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='Mylyn for Eclipse Mars' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='true'/>
+    <property name='p2.timestamp' value='1475857009000'/>
+  </properties>
+  <children size='2'>
+    <child location='../../drops/3.18.0/v20151215-0126/'/>
+    <child location='../../drops/3.17.0/v20150909-1855/'/>
+  </children>
+</repository>

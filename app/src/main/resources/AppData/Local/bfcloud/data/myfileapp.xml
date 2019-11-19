@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BFCApps>
+<AppGroups name="常用">
+<App sid="26B760F721B4FC58826944439B1978D1233252F5" name="Internet Explorer" lnk="D:\CloudCache\bfcapp\link\26B760F721B4FC58826944439B1978D1233252F5.lnk" tagt="C:\Program Files (x86)\Internet Explorer\iexplore.exe"/>
+<App sid="59BD08F3532B8CC8985FDA42B5290F3CE5B95798" name="个税网络在线报税" lnk="D:\CloudCache\bfcapp\link\59BD08F3532B8CC8985FDA42B5290F3CE5B95798.lnk" tagt="C:\Program Files (x86)\ZGSGL\Grsds.exe"/>
+<App sid="58740632729CB8092B66FC44BAE87539453F97D9" name="中信证券至信全能版" lnk="D:\CloudCache\bfcapp\link\58740632729CB8092B66FC44BAE87539453F97D9.lnk" tagt="C:\new_zx_allin1\TdxW.exe"/>
+<App sid="0E98952626DFFBD993D5D84AA150B5CA88F5B61E" name="同花顺财通证券（沪港通版本）" lnk="D:\CloudCache\bfcapp\link\0E98952626DFFBD993D5D84AA150B5CA88F5B61E.lnk" tagt="C:\同花顺财通证券-沪港通版本\hexin.exe"/>
+<App sid="0E42F66C07D81337097571449D1066F089A1F042" name="搜狐影音" lnk="D:\CloudCache\bfcapp\link\0E42F66C07D81337097571449D1066F089A1F042.lnk" tagt="C:\Program Files (x86)\搜狐影音\SHPlayer.exe"/>
+<App sid="26F08020B32C33ACCEF14248B8120A0545611B12" name="搜狐影音游戏大厅" lnk="D:\CloudCache\bfcapp\link\26F08020B32C33ACCEF14248B8120A0545611B12.lnk" tagt="C:\Program Files (x86)\搜狐影音\SHPlayer.exe"/>
+<App sid="5A2D21F1D33F3D606D0D6D4BAED117E0742B9E09" name="财通下单（沪港通版本）" lnk="D:\CloudCache\bfcapp\link\5A2D21F1D33F3D606D0D6D4BAED117E0742B9E09.lnk" tagt="C:\同花顺财通证券-沪港通版本\xiadan.exe"/>
+<App sid="7A981366B0CA430915038C42B0AC2E471EAE93F8" name="Google Chrome" lnk="D:\CloudCache\bfcapp\link\7A981366B0CA430915038C42B0AC2E471EAE93F8.lnk" tagt="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
+<App sid="9979197905569F7198BAA94F8061450FCC389417" name="VLC media player" lnk="D:\CloudCache\bfcapp\link\9979197905569F7198BAA94F8061450FCC389417.lnk" tagt="C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"/>
+<App sid="6136FD42F6E1FF4D0F64B04EB391D8BB3A0164CB" name="云端桌面" lnk="D:\CloudCache\bfcapp\link\6136FD42F6E1FF4D0F64B04EB391D8BB3A0164CB.lnk" tagt="C:\Program Files (x86)\bfcloud\bfcloader.exe"/>
+<App sid="30A10426A1475C7BF40B214A8EFEFE06D85B7957" name="卡巴斯基安全软件" lnk="D:\CloudCache\bfcapp\link\30A10426A1475C7BF40B214A8EFEFE06D85B7957.lnk" tagt="C:\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security 15.0.0\avpui.exe"/>
+<App sid="F522096FE36ABB26BC4FA8428DCFEFD24B39B75F" name="毒霸网址大全" lnk="D:\CloudCache\bfcapp\link\F522096FE36ABB26BC4FA8428DCFEFD24B39B75F.lnk" tagt="C:\Program Files (x86)\kingsoft\kingsoft antivirus\kismain.exe"/>
+<App sid="F4AA8FC465C0D9D83A220F4A9F802D9581C9CD4A" name="火绒安全软件" lnk="D:\CloudCache\bfcapp\link\F4AA8FC465C0D9D83A220F4A9F802D9581C9CD4A.lnk" tagt="C:\Program Files (x86)\Huorong\Sysdiag\bin\HipsMain.exe"/>
+<App sid="9FEC37BB5DA18C9B1680C64DBD7033F2AA83E820" name="电脑管家" lnk="D:\CloudCache\bfcapp\link\9FEC37BB5DA18C9B1680C64DBD7033F2AA83E820.lnk" tagt="C:\Program Files (x86)\Tencent\QQPCMgr\10.9.16345.222\QQPCTray.exe"/>
+<App sid="D04E47ED61C1300524B13E4BB9755A8C0154AC24" name="腾讯QQ" lnk="D:\CloudCache\bfcapp\link\D04E47ED61C1300524B13E4BB9755A8C0154AC24.lnk" tagt="C:\Program Files (x86)\Tencent\QQ\QQProtect\Bin\QQProtect.exe"/>
+<App sid="0A8AFF40D018B4F75BEEC8499B68CC48B8130887" name="软件管理" lnk="D:\CloudCache\bfcapp\link\0A8AFF40D018B4F75BEEC8499B68CC48B8130887.lnk" tagt="C:\Program Files (x86)\Tencent\QQPCMgr\10.9.16345.222\QQPCSoftMgr.exe"/>
+<App sid="B277DD78CA3D8B48324AFE4F8F23AFEB7207C13E" name="金山毒霸" lnk="D:\CloudCache\bfcapp\link\B277DD78CA3D8B48324AFE4F8F23AFEB7207C13E.lnk" tagt="C:\Program Files (x86)\kingsoft\kingsoft antivirus\kismain.exe"/>
+<App sid="3B1809A4FE9D47914339604E878DA4AA466BAAC5" name="金蝶KIS迷你版" lnk="D:\CloudCache\bfcapp\link\3B1809A4FE9D47914339604E878DA4AA466BAAC5.lnk" tagt="D:\Program Files (x86)\Kingdee\KIS\MNB\KDWin.exe"/>
+<App sid="A07FE6E4332930DAEA48AB40B62344CD6905418E" name="阿里旺旺2014" lnk="D:\CloudCache\bfcapp\link\A07FE6E4332930DAEA48AB40B62344CD6905418E.lnk" tagt="C:\Program Files (x86)\AliWangWang\AliIM.exe"/>
+</AppGroups>
+<AppGroups name="文档">
+<App sid="2AD3E8262264F8F645193B4E9670F5C05921B33E" name="wr" lnk="D:\CloudCache\bfcapp\link\2AD3E8262264F8F645193B4E9670F5C05921B33E.lnk" tagt="C:\Users\Administrator\Desktop\wr.doc"/>
+<App sid="75975DC1F289475F820B954EA87F54CC5D38C712" name="房租合同 " lnk="D:\CloudCache\bfcapp\link\75975DC1F289475F820B954EA87F54CC5D38C712.lnk" tagt="C:\Users\Administrator\Desktop\房租合同 .doc"/>
+<App sid="A5F1AFE90D7FD9AE261FDB4B95EEC420F1504536" name="新建 Microsoft Word 文档 (2)" lnk="D:\CloudCache\bfcapp\link\A5F1AFE90D7FD9AE261FDB4B95EEC420F1504536.lnk" tagt="C:\Users\Administrator\Desktop\新建 Microsoft Word 文档 (2).docx"/>
+</AppGroups>
+<AppGroups name="图片"/>
+<AppGroups name="文件夹">
+<App sid="18A06628CB0BA1809C88234387CAEF08B701B47D" name="kb" lnk="D:\CloudCache\bfcapp\link\18A06628CB0BA1809C88234387CAEF08B701B47D.lnk" tagt="C:\Users\Administrator\Desktop\kb"/>
+<App sid="175D36B08370F187415CB94E827DB0E7ECBCDF07" name="下载" lnk="D:\CloudCache\bfcapp\link\175D36B08370F187415CB94E827DB0E7ECBCDF07.lnk" tagt="C:\Users\Administrator\Downloads"/>
+</AppGroups>
+<AppGroups name="其它">
+<App sid="BE2E7CC434EFF553A110F74DB9B4AB66BE2A9914" name="$电脑管家-清理垃圾$" lnk="D:\CloudCache\bfcapp\link\BE2E7CC434EFF553A110F74DB9B4AB66BE2A9914.lnk" tagt=""/>
+<App sid="C51E6F0E5D3353C1D08F964ABC7D212442B509BC" name="VPDN 连接" lnk="D:\CloudCache\bfcapp\link\C51E6F0E5D3353C1D08F964ABC7D212442B509BC.lnk" tagt=""/>
+<App sid="2E59A8C64C4C3DD8CC2DAA418FCF842433B95F31" name="新建 Microsoft Word 文档" lnk="D:\CloudCache\bfcapp\link\2E59A8C64C4C3DD8CC2DAA418FCF842433B95F31.lnk" tagt=""/>
+<App sid="2BFCCDEB9A9899FFE63180418462648E494441F8" name="高清热播影视剧" lnk="D:\CloudCache\bfcapp\link\2BFCCDEB9A9899FFE63180418462648E494441F8.lnk" tagt="C:\Program Files (x86)\搜狐影音\高清热播影视剧.url"/>
+</AppGroups>
+</BFCApps>

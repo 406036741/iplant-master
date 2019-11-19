@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BGAQRCode-Android-1.1.9.iml" filepath="$PROJECT_DIR$/../BGAQRCode-Android-1.1.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qrcodecore.iml" filepath="$PROJECT_DIR$/qrcodecore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zbar/zbar.iml" filepath="$PROJECT_DIR$/../zbar/zbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zbardemo/zbardemo.iml" filepath="$PROJECT_DIR$/../zbardemo/zbardemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing/zxing.iml" filepath="$PROJECT_DIR$/../zxing/zxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxingdemo/zxingdemo.iml" filepath="$PROJECT_DIR$/../zxingdemo/zxingdemo.iml" />
+    </modules>
+  </component>
+</project>

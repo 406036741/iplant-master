@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shrislogin"
+    android:orientation="vertical">
+
+    <com.iplant.util.XCRoundImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:onClick="onSetUp"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_margin="@dimen/Login_logo_Margin"
+            android:layout_weight="30"
+
+            android:src="@drawable/crrclogo" />
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/Login_logo_Margin"
+            android:adjustViewBounds="true"
+            android:layout_weight="30"
+            android:src="@drawable/iplantmeslogo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <com.iplant.presenter.view.widget.ClearEditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/input"
+            android:drawableLeft="@drawable/imported_layers_2"
+            android:drawablePadding="19dp"
+            android:hint="账号"
+            android:padding="11dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#959595"
+            android:textSize="16sp" />
+
+        <com.iplant.presenter.view.widget.PwdEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/input"
+            android:drawableLeft="@drawable/group_3"
+            android:drawablePadding="19dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="11dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#959595"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onPwdRset"
+                android:text="找回密码"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:id="@+id/cb_RememberPwd"
+
+                android:layout_weight="1"
+                android:text="记住密码"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login"
+            android:onClick="OnLogin"
+            android:text="登 录"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="24dp"
+        android:textColor="#8d8d8d"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="bga-qrcodecore-1.1.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../zxingdemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-qrcodecore/1.1.9/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../zxingdemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-qrcodecore/1.1.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-qrcodecore/1.1.9/9dfd8d60f88aa4ba018777e964bc6c250abda211/bga-qrcodecore-1.1.9-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-qrcodecore/1.1.9/9dfd8d60f88aa4ba018777e964bc6c250abda211/bga-qrcodecore-1.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\ormlite-android-4.49.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecfae85e17f2472852fa8298952f9d52f6a6bfa4">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\ormlite-android-4.49_3b0ea86dd594073d08b40c78554338150f1c9032.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_55eaa9b618cda22703b2ca39b40a719e18dc3d4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\shris\.android\build-cache\0aa1d3b49c2b875ed2da73d5de8fde8ede25de52\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="df2e37117265452a74672ed55907ff5848e37ff8">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\classes_700808076e098f5e8a0ad1acc5bbbf7f0b7f124b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_b92de1250f3c2ff6321dc21b9d0d59cfa4e88244.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e797a05da4f73b51768d1489648f477c6143bed">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_614dae83ab723208eb8012f688ef9ae71e2f09ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\commons-email-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6cd5d2b5c11d2898b901e3162d825b804699187d">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\commons-email-1.2_6b07ed5a64bfe6be623656de65d5eb513eda16be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\additionnal.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\additionnal_84e09381a6f7fb8612974d034d743308882a5bcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\zxing_1e547c983c1db36ed7258b914c97045e2796353e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\persistence-api-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8a7f96961047da52a53b7347b6a919c6fbc6d7fa">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\persistence-api-1.0.2_cb34643c441d7abf3faa26fe1c5927b0e87fbe78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fe22c135f19470d05b0816d5996c442ef67da3f">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\zxing_bf6466689f3be0beb4038fd2d90064b0e87ab26c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\mail.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\mail_1665b7e6391c3ed4a0234ba14e96b6768f35f21b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_d99b6201a2761cc3d161f2e2c78665143179ccab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\persistence-api-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a7f96961047da52a53b7347b6a919c6fbc6d7fa">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\persistence-api-1.0.2_1195c7baee2f7dba04024967f28e52b55aa3d1b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\ormlite-core-4.49.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a8b276da6dada8141f614d3feba25a0e8589db7">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\ormlite-core-4.49_c892d1db61107ef0d4860738c29139cf71c98b15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\volley-20160803.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="34338971787a6c06dc86537457485cb674ac1fc9">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\volley-20160803_d48eebf0dffc75ea400fdb79c9f1653c4109fc98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\qrcodecore\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c863c34c30f9d3cac0b0699348d0e44d59b566d">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\classes_7f34cb30179462dd2cab7ada3a93c170beac9d3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_c86f1ed0395159ddb3fdcafd1142267d7e56a11e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2e797a05da4f73b51768d1489648f477c6143bed">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_dc19ae004e1f1c371d1211b50ab05d805d372bcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\zbar\build\intermediates\bundles\default\libs\zbar.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e671e7a14299d6f2591fc1ae672c49861d3329c6">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\zbar_1d112833a14e9f081d9166a9593c45dc0b8ff0af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\activation.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\activation_f579f435858ff7aec31d09d5a2463bfeefb401ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\volley-20160803.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34338971787a6c06dc86537457485cb674ac1fc9">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\volley-20160803_7bdad2aac2b2dcec08716219677a0235f6b0e717.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\zbar\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c19682139fd89ec074376fad720b001e14d5fa4a">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\classes_a49270dd2d303a20fd99e7f66f24b7d7ca63e558.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\ormlite-core-4.49.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9a8b276da6dada8141f614d3feba25a0e8589db7">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\ormlite-core-4.49_c2f1d6e42faa717c4c9c766ad265a7199213e150.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AppPro\iplant-master\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="D:\AppPro\iplant-master\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_a4493afa47816f4e6be4b010925bc2da1b462f7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project\iplantApp\CRRC\Program\iplant-master\app\libs\ormlite-android-4.49.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ecfae85e17f2472852fa8298952f9d52f6a6bfa4">
+        <dex dex="D:\Project\iplantApp\CRRC\Program\iplant-master\app\build\intermediates\pre-dexed\debug\ormlite-android-4.49_bbd8aac5c0422727b52ef81d2210e85d2d910a05.jar" />
+    </item>
+
+</items>

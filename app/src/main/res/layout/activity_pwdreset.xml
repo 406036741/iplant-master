@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fafafa">
+    <include 
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:text="请输入账号"/>
+    
+    <com.iplant.presenter.view.widget.ClearEditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="21dp"
+        android:drawableLeft="@drawable/imported_layers_2"
+        android:drawablePadding="19dp"
+        android:padding="11dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:background="@drawable/input"
+        android:hint="账号"
+        android:textColorHint="#959595"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="-1dp"
+        android:gravity="center_vertical"
+        android:padding="11dp"
+        android:background="@drawable/input"
+        android:orientation="horizontal">
+        
+        <EditText
+	        android:id="@+id/captcha"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:drawableLeft="@drawable/iconfont_yanzhengma_1"
+	        android:background="@null"
+	        android:drawablePadding="19dp"
+	        android:textColor="#000000"
+	        android:textSize="16sp"
+	        android:singleLine="true"
+	        android:hint="验证码"
+	        android:textColorHint="#959595"
+	        android:inputType="number"/>  
+        
+    <ImageView 
+        android:id="@+id/captcha_img"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"/>
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:clickable="true"
+        android:textColor="#2ea0f6"
+        android:textSize="16sp"
+        android:text="换一张"
+        android:onClick="onChange"/>
+    
+    </LinearLayout>
+        
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="确  定"
+        android:onClick="OnSubmit"
+        android:background="@drawable/login"/>
+ 
+</LinearLayout>

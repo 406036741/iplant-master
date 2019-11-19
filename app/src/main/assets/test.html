@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"	content="text/html;charset=gb2312">
+<script type="text/javascript">
+function qrcallback(arg){
+	alert("二维码扫描结果: " + arg);
+}
+
+function datecallback(time, monthofyear, dayofmonth){
+	alert("日期结果: " + "time = " + time + "; monthofyear=" + monthofyear + "; dayofmonth=" + dayofmonth);
+}
+
+</script>
+</head>
+<body>
+测试JS基本方法 
+<br/><br/>
+<button type="button"  style='font-size:26px' onClick="window.JSImpl.readQRCode('qrcallback')">获取二维码</button>
+<br/><br/>
+<button type="button" style='font-size:26px' onClick="window.JSImpl.exit()">退出</button>
+<br/><br/>
+<button type="button" style='font-size:26px' onClick="window.JSImpl.pickDate('datecallback')">选择日期</button>
+<br/><br/>
+<input type="file" accept="image/*" capture="camera" >
+<br/><br/>
+</body>
+</html>

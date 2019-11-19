@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="bga-zbar-1.1.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../zbardemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-zbar/1.1.9/jars/libs/zbar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../zbardemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-zbar/1.1.9/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../zbardemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-zbar/1.1.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-zbar/1.1.9/82e70fe481ba0ee1499bced56e197067fdb2049a/bga-zbar-1.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

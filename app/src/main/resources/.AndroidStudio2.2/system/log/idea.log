@@ -1,0 +1,864 @@
+2016-11-12 13:37:19,707 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - IDE: Android Studio (build #AI-145.3360264, 18 Oct 2016 00:00) 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - OS: Windows 7 (6.1, amd64) 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - JRE: 1.8.0_76-release-b03 (JetBrains s.r.o) 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - JVM: 25.76-b03 (OpenJDK 64-Bit Server VM) 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - JVM Args: -Xms256m -Xmx1280m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -da -Djna.nosys=true -Djna.boot.library.path= -Djna.debug_load=true -Djna.debug_load.jna=true -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -Didea.paths.selector=AndroidStudio2.2 -Didea.platform.prefix=AndroidStudio -Didea.jre.check=true -Djb.vmOptionsFile=D:\tools\android\AS\bin\studio64.exe.vmoptions -Xbootclasspath/a:D:\tools\android\AS\lib\boot.jar -Didea.jre.check=false 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - ext: D:\tools\android\AS\jre\jre\lib\ext: [access-bridge-64.jar, cldrdata.jar, dnsns.jar, jaccess.jar, localedata.jar, meta-index, nashorn.jar, sunec.jar, sunjce_provider.jar, sunmscapi.jar, sunpkcs11.jar, zipfs.jar] 
+2016-11-12 13:37:19,722 [     15]   INFO -        #com.intellij.idea.Main - JNU charset: GBK 
+2016-11-12 13:37:19,851 [    144]   INFO -        #com.intellij.idea.Main - JNA library loaded (64-bit) in 129 ms 
+2016-11-12 13:37:19,856 [    149]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2016-11-12 13:37:19,861 [    154]   INFO -        #com.intellij.idea.Main - Using "FocusKiller" library to prevent focus stealing. 
+2016-11-12 13:37:20,336 [    629]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2016-11-12 13:37:20,866 [   1159]   INFO - llij.ide.plugins.PluginManager - 36 plugins initialized in 833 ms 
+2016-11-12 13:37:20,882 [   1175]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Games (1.0), Android NDK Support (1.0), Android Support (10.2.2.2), CVS Integration (11), Copyright (8.1), Coverage (145.SNAPSHOT), EditorConfig (145.SNAPSHOT), Firebase App Indexing (0.1), Firebase Services (0.1), Firebase Testing (1.0), Git Integration (8.1), GitHub (145.SNAPSHOT), Google Analytics Uploader (1.0), Google Cloud Tools Core (0.2.8), Google Cloud Tools For Android Studio (0.2.8), Google Developers Samples (0.3.1), Google Login (1.0), Google Services (0.1), Gradle (145.SNAPSHOT), Groovy (9.0), I18n for Java (145.SNAPSHOT), IDEA CORE (145.SNAPSHOT), IntelliLang (8.0), JUnit (1.0), Java Bytecode Decompiler (145.SNAPSHOT), NDK WorkspaceManager Support (1.0), Properties Support (145.SNAPSHOT), SDK Updater (1.0), Settings Repository (145.SNAPSHOT), Subversion Integration (1.1), Task Management (1.0), Terminal (0.1), Test Recorder (1.0), TestNG-J (8.0), YAML (145.SNAPSHOT), hg4idea (10.0) 
+2016-11-12 13:37:22,801 [   3094]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Users\Administrator\.AndroidStudio2.2\system\caches\names.dat' does not exist 
+2016-11-12 13:37:22,801 [   3094]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=1226 
+2016-11-12 13:37:22,847 [   3140]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: D:\tools\android\AS\bin\fsnotifier64.exe 
+2016-11-12 13:37:22,894 [   3187]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2016-11-12 13:37:23,237 [   3530]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2016-11-12 13:37:23,237 [   3530]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2016-11-12 13:37:23,724 [   4017]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2016-11-12 13:37:23,744 [   4037]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2016-11-12 13:37:25,404 [   5697]   INFO - ellij.project.impl.ProjectImpl - 20 project components initialized in 489 ms 
+2016-11-12 13:37:25,404 [   5697]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2016-11-12 13:37:25,656 [   5949]   INFO - plication.impl.ApplicationImpl - 85 application components initialized in 5625 ms 
+2016-11-12 13:37:25,735 [   6028]   INFO - .intellij.idea.IdeaApplication - App initialization took 10748 ms 
+2016-11-12 13:37:26,428 [   6721]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\build-tools\19.1.0\package.xml 
+2016-11-12 13:37:26,960 [   7253]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\build-tools\20.0.0\package.xml 
+2016-11-12 13:37:26,991 [   7284]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\build-tools\22.0.1\package.xml 
+2016-11-12 13:37:27,023 [   7316]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\platform-tools\package.xml 
+2016-11-12 13:37:27,038 [   7331]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\platforms\android-19\package.xml 
+2016-11-12 13:37:27,054 [   7347]   INFO - .welcome.wizard.FirstRunWizard - Parsing D:\tools\android\sdk\tools\package.xml 
+2016-11-12 13:37:27,101 [   7394]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addons_list-3.xml 
+2016-11-12 13:37:27,289 [   7582]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.openapi.actionSystem.impl.ActionPreloader@23c37613 
+2016-11-12 13:37:27,289 [   7582]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\build-tools\19.1.0\package.xml 
+2016-11-12 13:37:27,304 [   7597]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\build-tools\20.0.0\package.xml 
+2016-11-12 13:37:27,304 [   7597]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\build-tools\22.0.1\package.xml 
+2016-11-12 13:37:27,320 [   7613]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml 
+2016-11-12 13:37:27,336 [   7629]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\platform-tools\package.xml 
+2016-11-12 13:37:27,336 [   7629]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\platforms\android-19\package.xml 
+2016-11-12 13:37:27,351 [   7644]   INFO - s.RepoProgressIndicatorAdapter - Parsing D:\tools\android\sdk\tools\package.xml 
+2016-11-12 13:37:27,382 [   7675]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-1.xml 
+2016-11-12 13:37:28,022 [   8315]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-1.xml 
+2016-11-12 13:37:28,209 [   8502]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-1.xml 
+2016-11-12 13:37:28,272 [   8565]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-1.xml 
+2016-11-12 13:37:28,443 [   8736]   INFO - .diagnostic.PerformanceWatcher - High memory usage (free 168 of 1246 MB) while dumping threads to C:\Users\Administrator\.AndroidStudio2.2\system\log\threadDumps-20161112-133723-AI-145.3360264\20161112-133728\threadDump-20161112-133728.txt 
+2016-11-12 13:37:28,537 [   8830]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-1.xml 
+2016-11-12 13:37:28,552 [   8845]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-1.xml 
+2016-11-12 13:37:28,740 [   9033]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/addon2-1.xml 
+2016-11-12 13:37:28,771 [   9064]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-1.xml 
+2016-11-12 13:37:29,011 [   9304]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.ui.search.SearchableOptionPreloader@402e08c8 
+2016-11-12 13:37:29,105 [   9398]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/glass/addon2-1.xml 
+2016-11-12 13:37:29,183 [   9476]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/addon2-1.xml 
+2016-11-12 13:37:29,386 [   9679]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/extras/intel/addon2-1.xml 
+2016-11-12 13:37:29,479 [   9772]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/glass/addon2-1.xml 
+2016-11-12 13:37:29,604 [   9897]   INFO - s.RepoProgressIndicatorAdapter - Downloading file:/D:/tools/android/AS/plugins/sdk-updates/offline-repo/offline-repo.xml 
+2016-11-12 13:37:29,666 [   9959]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/extras/intel/addon2-1.xml 
+2016-11-12 13:37:29,729 [  10022]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2016-11-12 13:37:29,822 [  10115]   INFO - dea.updater.SdkComponentSource - Downloading file:/D:/tools/android/AS/plugins/sdk-updates/offline-repo/offline-repo.xml 
+2016-11-12 13:37:29,887 [  10180]   INFO - dea.updater.SdkComponentSource - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2016-11-12 13:37:30,038 [  10331]   WARN - vdmanager.AvdManagerConnection - No Android SDK Found 
+2016-11-12 13:37:30,641 [  10934]   INFO - rtup.GradleSpecificInitializer - Found Studio home directory at: 'D:\tools\android\AS' 
+2016-11-12 13:37:30,641 [  10934]   INFO - rtup.GradleSpecificInitializer - Looking for Android SDK at 'D:/tools/android/AS/sdk' 
+2016-11-12 13:37:30,641 [  10934]   INFO - rtup.GradleSpecificInitializer - Looking for Android SDK at 'D:/tools/android/sdk' 
+2016-11-12 13:37:30,641 [  10934]   INFO - rtup.GradleSpecificInitializer - Found Android SDK at 'D:/tools/android/sdk' 
+2016-11-12 13:37:30,766 [  11059]   INFO - .startup.AndroidSdkInitializer - Found Studio home directory at: 'D:\tools\android\AS' 
+2016-11-12 13:37:30,766 [  11059]   INFO - .startup.AndroidSdkInitializer - Looking for Android SDK at 'D:/tools/android/AS/sdk' 
+2016-11-12 13:37:30,766 [  11059]   INFO - .startup.AndroidSdkInitializer - Looking for Android SDK at 'D:/tools/android/sdk' 
+2016-11-12 13:37:30,766 [  11059]   INFO - .startup.AndroidSdkInitializer - Found Android SDK at 'D:/tools/android/sdk' 
+2016-11-12 13:40:34,936 [ 195229]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929234936] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.EventQueue.invokeLater(EventQueue.java:1266)
+	at javax.swing.SwingUtilities.invokeLater(SwingUtilities.java:1290)
+	at com.intellij.openapi.application.impl.LaterInvocator.requestFlush(LaterInvocator.java:256)
+	at com.intellij.openapi.application.impl.LaterInvocator.access$600(LaterInvocator.java:51)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:330)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:40:35,014 [ 195307]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929235014] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:35,076 [ 195369]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929235076] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:35,155 [ 195448]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929235155] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:35,571 [ 195864]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929235571] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.EventQueue.invokeLater(EventQueue.java:1266)
+	at javax.swing.SwingUtilities.invokeLater(SwingUtilities.java:1290)
+	at com.intellij.openapi.application.impl.LaterInvocator.requestFlush(LaterInvocator.java:256)
+	at com.intellij.openapi.application.impl.LaterInvocator.invokeLater(LaterInvocator.java:146)
+	at com.intellij.openapi.application.impl.LaterInvocator.invokeLater(LaterInvocator.java:129)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:40)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:34)
+	at com.intellij.openapi.application.impl.ApplicationImpl.invokeLater(ApplicationImpl.java:430)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration.setFraction(ProgressStep.java:263)
+	at com.intellij.ide.util.DelegatingProgressIndicator.setFraction(DelegatingProgressIndicator.java:91)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressPortionReporter.setFraction(ProgressStep.java:208)
+	at com.android.tools.idea.welcome.install.SdkManagerProgressIndicatorIntegration.setFraction(SdkManagerProgressIndicatorIntegration.java:45)
+	at com.android.repository.util.InstallerUtil.readZipEntry(InstallerUtil.java:164)
+	at com.android.repository.util.InstallerUtil.unzip(InstallerUtil.java:131)
+	at com.android.repository.impl.installer.BasicInstaller.doPrepare(BasicInstaller.java:81)
+	at com.android.repository.impl.installer.AbstractPackageOperation.prepare(AbstractPackageOperation.java:243)
+	at com.android.tools.idea.welcome.install.ComponentInstaller.installPackages(ComponentInstaller.java:68)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:79)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:35)
+	at com.android.tools.idea.welcome.install.InstallOperation$1.compute(InstallOperation.java:80)
+	at com.android.tools.idea.welcome.install.InstallContext$Wrapper.run(InstallContext.java:126)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:443)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.run(ProgressStep.java:170)
+	at com.android.tools.idea.welcome.install.InstallContext.run(InstallContext.java:76)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:72)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:151)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.wizard.InstallComponentsPath.runLongOperation(InstallComponentsPath.java:248)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.doLongRunningOperation(ConsolidatedProgressStep.java:78)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.access$000(ConsolidatedProgressStep.java:32)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep$1.run(ConsolidatedProgressStep.java:58)
+	at com.android.tools.idea.welcome.wizard.FirstRunWizardHost$LongRunningOperationWrapper.run(FirstRunWizardHost.java:440)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$TaskRunnable.run(CoreProgressManager.java:563)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$2.run(CoreProgressManager.java:142)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:127)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$1.run(ProgressManagerImpl.java:126)
+	at com.intellij.openapi.application.impl.ApplicationImpl$8.run(ApplicationImpl.java:369)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ 
+2016-11-12 13:40:37,240 [ 197533]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237240] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:37,318 [ 197611]   INFO - agnostic.FrequentEventDetector - Too many events posted, #3. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-23465 0x23484)] on EditorComponent file=null
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.Component.notifyNewBounds(Component.java:2365)
+	at java.awt.Component.reshape(Component.java:2316)
+	at javax.swing.JComponent.reshape(JComponent.java:4207)
+	at java.awt.Component.setBounds(Component.java:2261)
+	at java.awt.Component.move(Component.java:2109)
+	at java.awt.Component.setLocation(Component.java:2098)
+	at javax.swing.JViewport.setViewPosition(JViewport.java:1120)
+	at javax.swing.plaf.basic.BasicScrollPaneUI$Handler.vsbStateChanged(BasicScrollPaneUI.java:1054)
+	at javax.swing.plaf.basic.BasicScrollPaneUI$Handler.stateChanged(BasicScrollPaneUI.java:1043)
+	at javax.swing.DefaultBoundedRangeModel.fireStateChanged(DefaultBoundedRangeModel.java:364)
+	at javax.swing.DefaultBoundedRangeModel.setRangeProperties(DefaultBoundedRangeModel.java:302)
+	at javax.swing.DefaultBoundedRangeModel.setValue(DefaultBoundedRangeModel.java:168)
+	at javax.swing.JScrollBar.setValue(JScrollBar.java:477)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl._scrollVertically(ScrollingModelImpl.java:312)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl.scrollToOffsets(ScrollingModelImpl.java:378)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl.scrollTo(ScrollingModelImpl.java:168)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.appendToDocument(ConsoleHighlighter.java:99)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.access$000(ConsoleHighlighter.java:50)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter$1.run(ConsoleHighlighter.java:65)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:345)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:329)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:40:37,396 [ 197689]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237396] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:37,474 [ 197767]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237474] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:37,552 [ 197845]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237552] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:37,630 [ 197923]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237630] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:37,724 [ 198017]   INFO - agnostic.FrequentEventDetector - Too many events posted, #4. Event: java.awt.event.ComponentEvent[COMPONENT_RESIZED (0,-27588 0x27626)] on EditorComponent file=null
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.Component.notifyNewBounds(Component.java:2360)
+	at java.awt.Component.reshape(Component.java:2316)
+	at javax.swing.JComponent.reshape(JComponent.java:4207)
+	at java.awt.Component.setBounds(Component.java:2261)
+	at java.awt.Component.resize(Component.java:2184)
+	at java.awt.Component.setSize(Component.java:2173)
+	at java.awt.Component.resize(Component.java:2213)
+	at java.awt.Component.setSize(Component.java:2204)
+	at com.intellij.openapi.editor.impl.EditorImpl.validateSize(EditorImpl.java:2050)
+	at com.intellij.openapi.editor.impl.EditorImpl.changedUpdate(EditorImpl.java:1953)
+	at com.intellij.openapi.editor.impl.EditorImpl.access$14600(EditorImpl.java:125)
+	at com.intellij.openapi.editor.impl.EditorImpl$EditorDocumentAdapter.documentChanged(EditorImpl.java:6719)
+	at com.intellij.openapi.editor.impl.DocumentImpl.changedUpdate(DocumentImpl.java:785)
+	at com.intellij.openapi.editor.impl.DocumentImpl.updateText(DocumentImpl.java:724)
+	at com.intellij.openapi.editor.impl.DocumentImpl.insertString(DocumentImpl.java:479)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.appendToDocument(ConsoleHighlighter.java:95)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.access$000(ConsoleHighlighter.java:50)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter$1.run(ConsoleHighlighter.java:65)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:345)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:329)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:40:37,911 [ 198204]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929237911] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,098 [ 198391]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238098] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,192 [ 198485]   INFO - agnostic.FrequentEventDetector - Too many events posted, #3. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-33117 0x33136)] on EditorComponent file=null 
+2016-11-12 13:40:38,285 [ 198578]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238285] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,473 [ 198766]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238473] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,551 [ 198844]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238551] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,613 [ 198906]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238613] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:38,707 [ 199000]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929238707] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:39,424 [ 199717]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929239424] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:39,518 [ 199811]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929239518] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:40,095 [ 200388]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929240095] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:40,972 [ 201265]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929240972] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:41,019 [ 201312]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929241019] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:41,487 [ 201780]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929241487] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:40:41,580 [ 201873]   INFO - agnostic.FrequentEventDetector - Too many events posted, #5. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.openapi.editor.impl.EditorImpl$17@5be288aa,notifier=null,catchExceptions=false,when=1478929241580] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.EventQueue.invokeLater(EventQueue.java:1266)
+	at javax.swing.SwingUtilities.invokeLater(SwingUtilities.java:1290)
+	at com.intellij.openapi.editor.impl.EditorImpl.updateGutterSize(EditorImpl.java:2023)
+	at com.intellij.openapi.editor.impl.EditorImpl.changedUpdate(EditorImpl.java:1963)
+	at com.intellij.openapi.editor.impl.EditorImpl.access$14600(EditorImpl.java:125)
+	at com.intellij.openapi.editor.impl.EditorImpl$EditorDocumentAdapter.documentChanged(EditorImpl.java:6719)
+	at com.intellij.openapi.editor.impl.DocumentImpl.changedUpdate(DocumentImpl.java:785)
+	at com.intellij.openapi.editor.impl.DocumentImpl.updateText(DocumentImpl.java:724)
+	at com.intellij.openapi.editor.impl.DocumentImpl.insertString(DocumentImpl.java:479)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.appendToDocument(ConsoleHighlighter.java:95)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.access$000(ConsoleHighlighter.java:50)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter$1.run(ConsoleHighlighter.java:65)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:345)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:329)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:40:42,391 [ 202684]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929242391] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:23,474 [ 363767]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929403474] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:23,552 [ 363845]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929403552] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:25,671 [ 365964]   INFO - agnostic.FrequentEventDetector - Too many events posted, #6. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-145274 0x94468)] on com.intellij.openapi.editor.impl.EditorGutterComponentImpl[,0,-145274,0x94468,alignmentX=0.0,alignmentY=0.0,border=com.intellij.ui.components.JBViewport$ResourceViewBorder@774f2c5b,flags=16777224,maximumSize=,minimumSize=,preferredSize=]
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.Component.notifyNewBounds(Component.java:2365)
+	at java.awt.Component.reshape(Component.java:2316)
+	at javax.swing.JComponent.reshape(JComponent.java:4207)
+	at java.awt.Component.setBounds(Component.java:2261)
+	at java.awt.Component.move(Component.java:2109)
+	at java.awt.Component.setLocation(Component.java:2098)
+	at javax.swing.JViewport.setViewPosition(JViewport.java:1120)
+	at javax.swing.plaf.basic.BasicScrollPaneUI.syncScrollPaneWithViewport(BasicScrollPaneUI.java:340)
+	at javax.swing.plaf.basic.BasicScrollPaneUI$Handler.stateChanged(BasicScrollPaneUI.java:1033)
+	at javax.swing.JViewport.fireStateChanged(JViewport.java:1369)
+	at javax.swing.JViewport.setViewPosition(JViewport.java:1125)
+	at javax.swing.plaf.basic.BasicScrollPaneUI$Handler.vsbStateChanged(BasicScrollPaneUI.java:1054)
+	at javax.swing.plaf.basic.BasicScrollPaneUI$Handler.stateChanged(BasicScrollPaneUI.java:1043)
+	at javax.swing.DefaultBoundedRangeModel.fireStateChanged(DefaultBoundedRangeModel.java:364)
+	at javax.swing.DefaultBoundedRangeModel.setRangeProperties(DefaultBoundedRangeModel.java:302)
+	at javax.swing.DefaultBoundedRangeModel.setValue(DefaultBoundedRangeModel.java:168)
+	at javax.swing.JScrollBar.setValue(JScrollBar.java:477)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl._scrollVertically(ScrollingModelImpl.java:312)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl.scrollToOffsets(ScrollingModelImpl.java:378)
+	at com.intellij.openapi.editor.impl.ScrollingModelImpl.scrollTo(ScrollingModelImpl.java:168)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.appendToDocument(ConsoleHighlighter.java:99)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.access$000(ConsoleHighlighter.java:50)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter$1.run(ConsoleHighlighter.java:65)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:345)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:329)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:43:25,754 [ 366047]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929405754] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:25,952 [ 366245]   INFO - agnostic.FrequentEventDetector - Too many events posted, #3. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-149074 0x149093)] on EditorComponent file=null 
+2016-11-12 13:43:26,247 [ 366540]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929406247] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:26,451 [ 366744]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929406451] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:26,539 [ 366832]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929406539] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:26,615 [ 366908]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929406614] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:26,828 [ 367121]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929406827] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:27,417 [ 367710]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929407416] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:27,480 [ 367773]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929407480] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:27,668 [ 367961]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929407668] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:27,746 [ 368039]   INFO - agnostic.FrequentEventDetector - Too many events posted, #5. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.openapi.editor.impl.EditorImpl$17@30fa137a,notifier=null,catchExceptions=false,when=1478929407745] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:27,936 [ 368229]   INFO - agnostic.FrequentEventDetector - Too many events posted, #4. Event: java.awt.event.ComponentEvent[COMPONENT_RESIZED (0,-162982 0x163020)] on EditorComponent file=null 
+2016-11-12 13:43:28,022 [ 368315]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408022] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,103 [ 368396]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408103] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,191 [ 368484]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408191] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,290 [ 368583]   INFO - agnostic.FrequentEventDetector - Too many events posted, #6. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-167637 0x94468)] on com.intellij.openapi.editor.impl.EditorGutterComponentImpl[,0,-167637,0x94468,alignmentX=0.0,alignmentY=0.0,border=com.intellij.ui.components.JBViewport$ResourceViewBorder@774f2c5b,flags=16777224,maximumSize=,minimumSize=,preferredSize=] 
+2016-11-12 13:43:28,573 [ 368866]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408573] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,636 [ 368929]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408636] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,714 [ 369007]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408714] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,776 [ 369069]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408776] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,840 [ 369133]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408840] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,902 [ 369195]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408902] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:28,949 [ 369242]   INFO - agnostic.FrequentEventDetector - Too many events posted, #3. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-174401 0x174420)] on EditorComponent file=null 
+2016-11-12 13:43:28,996 [ 369289]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929408996] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,060 [ 369353]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409060] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,091 [ 369384]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409091] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,169 [ 369462]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409169] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,232 [ 369525]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409232] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,544 [ 369837]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409544] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,608 [ 369901]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409607] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,663 [ 369956]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409663] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,728 [ 370021]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409728] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,786 [ 370079]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409786] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,854 [ 370147]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409854] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,909 [ 370202]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409909] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:29,983 [ 370276]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929409983] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,048 [ 370341]   INFO - agnostic.FrequentEventDetector - Too many events posted, #6. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-178771 0x94468)] on com.intellij.openapi.editor.impl.EditorGutterComponentImpl[,0,-178771,0x94468,alignmentX=0.0,alignmentY=0.0,border=com.intellij.ui.components.JBViewport$ResourceViewBorder@774f2c5b,flags=16777224,maximumSize=,minimumSize=,preferredSize=] 
+2016-11-12 13:43:30,110 [ 370403]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410110] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,158 [ 370451]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410158] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,221 [ 370514]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410221] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,283 [ 370576]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410283] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,361 [ 370654]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410361] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,438 [ 370731]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410438] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,509 [ 370802]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410509] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,564 [ 370857]   INFO - agnostic.FrequentEventDetector - Too many events posted, #3. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-182647 0x182666)] on EditorComponent file=null 
+2016-11-12 13:43:30,624 [ 370917]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410623] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,671 [ 370964]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410671] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,734 [ 371027]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410734] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,796 [ 371089]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410796] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,858 [ 371151]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410858] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,936 [ 371229]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410936] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:30,999 [ 371292]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929410999] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:31,063 [ 371356]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929411063] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:31,141 [ 371434]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929411141] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:31,603 [ 371896]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929411603] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:31,666 [ 371959]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929411666] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:31,869 [ 372162]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929411869] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:32,705 [ 372998]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929412705] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:32,797 [ 373090]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929412797] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:32,866 [ 373159]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929412866] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:43:33,658 [ 373951]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929413657] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:23,866 [ 424159]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929463866] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:23,928 [ 424221]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929463928] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:23,928 [ 424221]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@57686b59
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.openapi.application.impl.LaterInvocator.invokeLater(LaterInvocator.java:139)
+	at com.intellij.openapi.application.impl.LaterInvocator.invokeLater(LaterInvocator.java:129)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:40)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:34)
+	at com.intellij.openapi.application.impl.ApplicationImpl.invokeLater(ApplicationImpl.java:430)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration.setFraction(ProgressStep.java:263)
+	at com.intellij.ide.util.DelegatingProgressIndicator.setFraction(DelegatingProgressIndicator.java:91)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressPortionReporter.setFraction(ProgressStep.java:208)
+	at com.android.tools.idea.welcome.install.SdkManagerProgressIndicatorIntegration.setFraction(SdkManagerProgressIndicatorIntegration.java:45)
+	at com.android.repository.util.InstallerUtil.readZipEntry(InstallerUtil.java:164)
+	at com.android.repository.util.InstallerUtil.unzip(InstallerUtil.java:131)
+	at com.android.repository.impl.installer.BasicInstaller.doPrepare(BasicInstaller.java:81)
+	at com.android.repository.impl.installer.AbstractPackageOperation.prepare(AbstractPackageOperation.java:243)
+	at com.android.tools.idea.welcome.install.ComponentInstaller.installPackages(ComponentInstaller.java:68)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:79)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:35)
+	at com.android.tools.idea.welcome.install.InstallOperation$1.compute(InstallOperation.java:80)
+	at com.android.tools.idea.welcome.install.InstallContext$Wrapper.run(InstallContext.java:126)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:443)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.run(ProgressStep.java:170)
+	at com.android.tools.idea.welcome.install.InstallContext.run(InstallContext.java:76)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:72)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:151)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.wizard.InstallComponentsPath.runLongOperation(InstallComponentsPath.java:248)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.doLongRunningOperation(ConsolidatedProgressStep.java:78)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.access$000(ConsolidatedProgressStep.java:32)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep$1.run(ConsolidatedProgressStep.java:58)
+	at com.android.tools.idea.welcome.wizard.FirstRunWizardHost$LongRunningOperationWrapper.run(FirstRunWizardHost.java:440)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$TaskRunnable.run(CoreProgressManager.java:563)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$2.run(CoreProgressManager.java:142)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:127)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$1.run(ProgressManagerImpl.java:126)
+	at com.intellij.openapi.application.impl.ApplicationImpl$8.run(ApplicationImpl.java:369)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ 
+2016-11-12 13:44:23,975 [ 424268]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929463975] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,015 [ 424308]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464015] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,053 [ 424346]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464053] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,101 [ 424394]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464101] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,116 [ 424409]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@6734312e 
+2016-11-12 13:44:24,163 [ 424456]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464163] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,210 [ 424503]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464210] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,274 [ 424567]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464274] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,305 [ 424598]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464305] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,320 [ 424613]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@70be382f 
+2016-11-12 13:44:24,352 [ 424645]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464352] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,418 [ 424711]   INFO - agnostic.FrequentEventDetector - Too many events posted, #7. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=com.intellij.util.ui.Animator$2$1@6f1c519f,notifier=null,catchExceptions=false,when=1478929464418] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.EventQueue.invokeLater(EventQueue.java:1266)
+	at javax.swing.SwingUtilities.invokeLater(SwingUtilities.java:1290)
+	at com.intellij.util.ui.Animator$2.run(Animator.java:156)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.intellij.util.concurrency.SchedulingWrapper$MyScheduledFutureTask.run(SchedulingWrapper.java:229)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$2.run(BoundedTaskExecutor.java:187)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ 
+2016-11-12 13:44:24,457 [ 424750]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464457] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,519 [ 424812]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464519] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,566 [ 424859]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464566] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,613 [ 424906]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464613] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,628 [ 424921]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2029cab0 
+2016-11-12 13:44:24,644 [ 424937]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464644] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,691 [ 424984]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464691] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,691 [ 424984]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2c65543e 
+2016-11-12 13:44:24,742 [ 425035]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464742] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,798 [ 425091]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464798] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,849 [ 425142]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464849] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,902 [ 425195]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464902] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:24,965 [ 425258]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929464965] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:25,017 [ 425310]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929465017] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:25,076 [ 425369]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929465076] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:25,151 [ 425444]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929465151] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:44:25,371 [ 425664]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929465371] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,449 [ 569742]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609449] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,495 [ 569788]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609495] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,558 [ 569851]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609558] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,605 [ 569898]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609605] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,651 [ 569944]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609651] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,651 [ 569944]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@5b961039 
+2016-11-12 13:46:49,698 [ 569991]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609698] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,745 [ 570038]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@5e60f63a 
+2016-11-12 13:46:49,745 [ 570038]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609745] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,807 [ 570100]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609807] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,839 [ 570132]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@f4a96d3 
+2016-11-12 13:46:49,854 [ 570147]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609854] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,885 [ 570178]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609885] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,932 [ 570225]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@36df27ad 
+2016-11-12 13:46:49,932 [ 570225]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609932] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:49,995 [ 570288]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929609995] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,026 [ 570319]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@367be7a2 
+2016-11-12 13:46:50,041 [ 570334]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610041] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,088 [ 570381]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610088] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,119 [ 570412]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@ccc34c4 
+2016-11-12 13:46:50,135 [ 570428]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610135] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,182 [ 570475]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610182] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,244 [ 570537]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610244] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,307 [ 570600]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610307] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,353 [ 570646]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610353] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,400 [ 570693]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610400] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,447 [ 570740]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@55edf281 
+2016-11-12 13:46:50,463 [ 570756]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610463] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,509 [ 570802]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610509] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,556 [ 570849]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610556] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,619 [ 570912]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610619] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,665 [ 570958]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610665] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,714 [ 571007]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610713] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,758 [ 571051]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@24483ba0 
+2016-11-12 13:46:50,767 [ 571060]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610767] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,818 [ 571111]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610818] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,871 [ 571164]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610870] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,931 [ 571224]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610931] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:50,975 [ 571268]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929610975] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:51,349 [ 571642]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929611349] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:51,411 [ 571704]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929611411] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:51,474 [ 571767]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929611474] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:51,521 [ 571814]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929611521] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,100 [ 572393]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612100] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,162 [ 572455]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612162] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,225 [ 572518]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612225] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,271 [ 572564]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612271] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,334 [ 572627]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612334] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,396 [ 572689]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612396] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,474 [ 572767]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612474] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,521 [ 572814]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612521] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,615 [ 572908]   INFO - agnostic.FrequentEventDetector - Too many events posted, #6. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-237215 0x218557)] on com.intellij.openapi.editor.impl.EditorGutterComponentImpl[,0,-237215,0x218557,alignmentX=0.0,alignmentY=0.0,border=com.intellij.ui.components.JBViewport$ResourceViewBorder@774f2c5b,flags=16777224,maximumSize=,minimumSize=,preferredSize=] 
+2016-11-12 13:46:52,708 [ 573001]   INFO - agnostic.FrequentEventDetector - Too many events posted, #6. Event: java.awt.event.ComponentEvent[COMPONENT_MOVED (0,-238792 0x218557)] on com.intellij.openapi.editor.impl.EditorGutterComponentImpl[,0,-238792,0x218557,alignmentX=0.0,alignmentY=0.0,border=com.intellij.ui.components.JBViewport$ResourceViewBorder@774f2c5b,flags=16777224,maximumSize=,minimumSize=,preferredSize=] 
+2016-11-12 13:46:52,771 [ 573064]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612771] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,833 [ 573126]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612833] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:52,927 [ 573220]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929612927] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,005 [ 573298]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613005] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,067 [ 573360]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613067] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,114 [ 573407]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613114] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,270 [ 573563]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613270] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,925 [ 574218]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613925] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:53,987 [ 574280]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929613987] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,034 [ 574327]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614034] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,081 [ 574374]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@e0af880 
+2016-11-12 13:46:54,097 [ 574390]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614097] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,159 [ 574452]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614159] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,206 [ 574499]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614206] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,284 [ 574577]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614284] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,346 [ 574639]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614346] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,424 [ 574717]   INFO - agnostic.FrequentEventDetector - Too many events posted, #8. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614424] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at java.awt.EventQueue.invokeLater(EventQueue.java:1266)
+	at javax.swing.SwingUtilities.invokeLater(SwingUtilities.java:1290)
+	at com.intellij.openapi.application.impl.LaterInvocator.requestFlush(LaterInvocator.java:256)
+	at com.intellij.openapi.application.impl.LaterInvocator.invokeLater(LaterInvocator.java:146)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:46)
+	at com.intellij.openapi.application.impl.ModalityInvokatorImpl.invokeLater(ModalityInvokatorImpl.java:52)
+	at com.intellij.openapi.application.impl.ApplicationImpl.invokeLater(ApplicationImpl.java:440)
+	at com.android.tools.idea.welcome.wizard.ConsoleHighlighter.print(ConsoleHighlighter.java:62)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.print(ProgressStep.java:130)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration.setText2(ProgressStep.java:234)
+	at com.intellij.ide.util.DelegatingProgressIndicator.setText2(DelegatingProgressIndicator.java:76)
+	at com.android.tools.idea.welcome.install.SdkManagerProgressIndicatorIntegration.setSecondaryText(SdkManagerProgressIndicatorIntegration.java:55)
+	at com.android.repository.util.InstallerUtil.unzip(InstallerUtil.java:106)
+	at com.android.repository.impl.installer.BasicInstaller.doPrepare(BasicInstaller.java:81)
+	at com.android.repository.impl.installer.AbstractPackageOperation.prepare(AbstractPackageOperation.java:243)
+	at com.android.tools.idea.welcome.install.ComponentInstaller.installPackages(ComponentInstaller.java:68)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:79)
+	at com.android.tools.idea.welcome.install.InstallComponentsOperation.perform(InstallComponentsOperation.java:35)
+	at com.android.tools.idea.welcome.install.InstallOperation$1.compute(InstallOperation.java:80)
+	at com.android.tools.idea.welcome.install.InstallContext$Wrapper.run(InstallContext.java:126)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:443)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.run(ProgressStep.java:170)
+	at com.android.tools.idea.welcome.install.InstallContext.run(InstallContext.java:76)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:72)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:151)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.install.InstallOperation$OperationChain.perform(InstallOperation.java:149)
+	at com.android.tools.idea.welcome.install.InstallOperation.execute(InstallOperation.java:68)
+	at com.android.tools.idea.welcome.wizard.InstallComponentsPath.runLongOperation(InstallComponentsPath.java:248)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.doLongRunningOperation(ConsolidatedProgressStep.java:78)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep.access$000(ConsolidatedProgressStep.java:32)
+	at com.android.tools.idea.welcome.wizard.ConsolidatedProgressStep$1.run(ConsolidatedProgressStep.java:58)
+	at com.android.tools.idea.welcome.wizard.FirstRunWizardHost$LongRunningOperationWrapper.run(FirstRunWizardHost.java:440)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$TaskRunnable.run(CoreProgressManager.java:563)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$2.run(CoreProgressManager.java:142)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:446)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:392)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:127)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$1.run(ProgressManagerImpl.java:126)
+	at com.intellij.openapi.application.impl.ApplicationImpl$8.run(ApplicationImpl.java:369)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ 
+2016-11-12 13:46:54,518 [ 574811]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614518] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,580 [ 574873]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614580] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,627 [ 574920]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614627] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,689 [ 574982]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614689] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,736 [ 575029]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614736] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,767 [ 575060]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@16e55141 
+2016-11-12 13:46:54,783 [ 575076]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614783] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,830 [ 575123]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614830] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,892 [ 575185]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614892] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:54,939 [ 575232]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929614939] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:55,001 [ 575294]   INFO - agnostic.FrequentEventDetector - Too many events posted, #4. Event: java.awt.event.ComponentEvent[COMPONENT_RESIZED (0,-257754 0x257792)] on EditorComponent file=null 
+2016-11-12 13:46:56,060 [ 576353]   INFO - agnostic.FrequentEventDetector - Too many events posted, #4. Event: java.awt.event.ComponentEvent[COMPONENT_RESIZED (0,-268736 0x268774)] on EditorComponent file=null 
+2016-11-12 13:46:56,231 [ 576524]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616231] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,278 [ 576571]   INFO - agnostic.FrequentEventDetector - Too many events posted, #8. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616278] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,340 [ 576633]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616340] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,387 [ 576680]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616387] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,418 [ 576711]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2b90355f 
+2016-11-12 13:46:56,434 [ 576727]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616434] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,481 [ 576774]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616481] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,512 [ 576805]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@4d6e553d 
+2016-11-12 13:46:56,528 [ 576821]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616528] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,590 [ 576883]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616590] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,606 [ 576899]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@63bd587 
+2016-11-12 13:46:56,621 [ 576914]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616621] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,668 [ 576961]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616668] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,699 [ 576992]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@1472d4ff 
+2016-11-12 13:46:56,730 [ 577023]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616730] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,762 [ 577055]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616762] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,793 [ 577086]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@7a15ca7f 
+2016-11-12 13:46:56,808 [ 577101]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616808] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,871 [ 577164]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616871] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,918 [ 577211]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616918] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,964 [ 577257]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929616964] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:56,996 [ 577289]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@3ffc637d 
+2016-11-12 13:46:57,011 [ 577304]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617011] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,074 [ 577367]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617074] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,089 [ 577382]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@1438bde0 
+2016-11-12 13:46:57,105 [ 577398]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617105] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,152 [ 577445]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617152] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,183 [ 577476]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@15a09227 
+2016-11-12 13:46:57,214 [ 577507]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617214] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,642 [ 577935]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617642] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,689 [ 577982]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617689] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,705 [ 577998]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@564411b0 
+2016-11-12 13:46:57,736 [ 578029]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617736] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,783 [ 578076]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617783] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,798 [ 578091]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2d66e927 
+2016-11-12 13:46:57,829 [ 578122]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617829] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,876 [ 578169]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617876] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,892 [ 578185]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@374942e7 
+2016-11-12 13:46:57,923 [ 578216]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617923] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,970 [ 578263]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929617970] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:57,985 [ 578278]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@6c9118bc 
+2016-11-12 13:46:58,017 [ 578310]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618017] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,063 [ 578356]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618063] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,079 [ 578372]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2e94501f 
+2016-11-12 13:46:58,110 [ 578403]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618110] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,157 [ 578450]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618157] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,173 [ 578466]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@7cc503c5 
+2016-11-12 13:46:58,219 [ 578512]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618219] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,251 [ 578544]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618251] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,266 [ 578559]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@39e8124 
+2016-11-12 13:46:58,297 [ 578590]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618297] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,360 [ 578653]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618360] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,409 [ 578702]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618393] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,455 [ 578748]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618455] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,455 [ 578748]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2a467446 
+2016-11-12 13:46:58,502 [ 578795]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618502] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,549 [ 578842]   INFO - agnostic.FrequentEventDetector - Too many events posted, #9. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=javax.swing.RepaintManager$ProcessingRunnable@2a7db53f,notifier=null,catchExceptions=false,when=1478929618549] on sun.awt.windows.WToolkit@4f6da5a
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.FrequentEventDetector.eventHappened(FrequentEventDetector.java:74)
+	at com.intellij.ide.IdeEventQueue.postEvent(IdeEventQueue.java:1159)
+	at javax.swing.RepaintManager.scheduleProcessingRunnable(RepaintManager.java:1444)
+	at javax.swing.RepaintManager.addDirtyRegion0(RepaintManager.java:466)
+	at javax.swing.RepaintManager.addDirtyRegion(RepaintManager.java:488)
+	at com.intellij.ide.IdeRepaintManager.addDirtyRegion(IdeRepaintManager.java:99)
+	at javax.swing.JComponent.repaint(JComponent.java:4793)
+	at java.awt.Component.repaint(Component.java:3311)
+	at javax.swing.plaf.basic.BasicProgressBarUI$Handler.stateChanged(BasicProgressBarUI.java:1244)
+	at javax.swing.JProgressBar.fireStateChanged(JProgressBar.java:729)
+	at javax.swing.JProgressBar$ModelListener.stateChanged(JProgressBar.java:652)
+	at javax.swing.DefaultBoundedRangeModel.fireStateChanged(DefaultBoundedRangeModel.java:364)
+	at javax.swing.DefaultBoundedRangeModel.setRangeProperties(DefaultBoundedRangeModel.java:302)
+	at javax.swing.DefaultBoundedRangeModel.setValue(DefaultBoundedRangeModel.java:168)
+	at javax.swing.JProgressBar.setValue(JProgressBar.java:847)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.setFraction(ProgressStep.java:176)
+	at com.android.tools.idea.welcome.wizard.ProgressStep.access$500(ProgressStep.java:43)
+	at com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4.run(ProgressStep.java:266)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:345)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:329)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:658)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ 
+2016-11-12 13:46:58,596 [ 578889]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618596] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,643 [ 578936]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618643] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,658 [ 578951]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@2c9a52ab 
+2016-11-12 13:46:58,705 [ 578998]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618705] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,736 [ 579029]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618736] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,752 [ 579045]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@5a26c18e 
+2016-11-12 13:46:58,799 [ 579092]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618799] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,845 [ 579138]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618845] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,845 [ 579138]   INFO - agnostic.FrequentEventDetector - Too many events posted, #1. Event: com.android.tools.idea.welcome.wizard.ProgressStep$ProgressIndicatorIntegration$4@714a4c05 
+2016-11-12 13:46:58,892 [ 579185]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618892] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:46:58,939 [ 579232]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929618939] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:47:37,545 [ 617838]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929657545] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:47:37,592 [ 617885]   INFO - agnostic.FrequentEventDetector - Too many events posted, #2. Event: java.awt.event.InvocationEvent[INVOCATION_DEFAULT,runnable=LaterInvocator.FlushQueue,notifier=null,catchExceptions=false,when=1478929657592] on sun.awt.windows.WToolkit@4f6da5a 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - Assertion failed: steps: [ADT Import Location, ADT Import Preferences, Eclipse Workspace Location, ADT Import SDK Selection, Missing Repositories, ADT Import Issues] current: Eclipse Workspace Location 
+java.lang.Throwable
+	at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:158)
+	at com.intellij.ide.wizard.AbstractWizard.doNextAction(AbstractWizard.java:372)
+	at com.intellij.ide.util.newProjectWizard.AbstractProjectWizard.doNextAction(AbstractProjectWizard.java:259)
+	at com.intellij.ide.wizard.AbstractWizard$5.actionPerformed(AbstractWizard.java:198)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:654)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:184)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:229)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:227)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:227)
+	at java.awt.Dialog.show(Dialog.java:1084)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$MyDialog.show(DialogWrapperPeerImpl.java:792)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.show(DialogWrapperPeerImpl.java:465)
+	at com.intellij.openapi.ui.DialogWrapper.invokeShow(DialogWrapper.java:1661)
+	at com.intellij.openapi.ui.DialogWrapper.show(DialogWrapper.java:1610)
+	at com.intellij.openapi.ui.DialogWrapper.showAndGet(DialogWrapper.java:1625)
+	at com.android.tools.idea.actions.AndroidImportProjectAction.importAdtProject(AndroidImportProjectAction.java:234)
+	at com.android.tools.idea.actions.AndroidImportProjectAction.createImportWizard(AndroidImportProjectAction.java:175)
+	at com.android.tools.idea.actions.AndroidImportProjectAction.selectFileAndCreateWizard(AndroidImportProjectAction.java:162)
+	at com.android.tools.idea.actions.AndroidImportProjectAction.selectFileAndCreateWizard(AndroidImportProjectAction.java:144)
+	at com.android.tools.idea.actions.AndroidImportProjectAction.actionPerformed(AndroidImportProjectAction.java:100)
+	at com.intellij.ui.components.labels.ActionLink$1.linkSelected(ActionLink.java:64)
+	at com.intellij.ui.components.labels.LinkLabel.doClick(LinkLabel.java:148)
+	at com.intellij.ui.components.labels.ActionLink.doClick(ActionLink.java:77)
+	at com.intellij.ui.components.labels.LinkLabel$MyMouseHandler.mouseReleased(LinkLabel.java:310)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:857)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:654)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:386)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - Android Studio 2.2.2  Build #AI-145.3360264 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - JDK: 1.8.0_76-release 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - VM: OpenJDK 64-Bit Server VM 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - Vendor: JetBrains s.r.o 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - OS: Windows 7 
+2016-11-12 13:50:28,349 [ 788642]  ERROR - llij.ide.wizard.AbstractWizard - Last Action:  
+2016-11-12 13:50:31,404 [ 791697]   INFO - CompilerWorkspaceConfiguration - Available processors: 4 
+2016-11-12 13:50:31,653 [ 791946]   INFO - ellij.project.impl.ProjectImpl - 144 project components initialized in 726 ms 
+2016-11-12 13:50:31,653 [ 791946]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2016-11-12 13:50:31,653 [ 791946]   INFO - i.vcs.changes.ChangeListWorker - default list not found when copy 
+2016-11-12 13:50:31,653 [ 791946]   INFO - i.vcs.changes.ChangeListWorker - default list not found when copy in original object too 

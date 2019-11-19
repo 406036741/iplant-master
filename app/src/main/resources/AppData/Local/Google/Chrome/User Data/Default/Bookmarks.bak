@@ -1,0 +1,66 @@
+{
+   "checksum": "aac8f0c1e7df98ee1a5794851c499408",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13078293343662932",
+         "date_modified": "13078293354413775",
+         "id": "1",
+         "name": "书签栏",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13078293354413775",
+            "id": "5",
+            "name": "打开新的标签页",
+            "type": "url",
+            "url": "chrome://newtab/"
+         }, {
+            "date_added": "13078293373141787",
+            "id": "6",
+            "name": "",
+            "type": "url",
+            "url": "http://www.baidu.com/"
+         }, {
+            "date_added": "13078630384563979",
+            "id": "9",
+            "name": "浙江地税因特网办税服务系统",
+            "type": "url",
+            "url": "http://www.zjds-etax.cn/sword?tid=WsxtXtzySyxgBLH_init"
+         }, {
+            "date_added": "13078630838761548",
+            "id": "11",
+            "name": "浙江省国税申报",
+            "type": "url",
+            "url": "http://100.0.0.1:8001/ctais2/wssb/web.html"
+         }, {
+            "date_added": "13080815915784967",
+            "id": "13",
+            "name": "百度一下，你就知道",
+            "type": "url",
+            "url": "https://www.baidu.com/"
+         }, {
+            "date_added": "13091544204602497",
+            "id": "15",
+            "name": "【天猫预售】Apple/苹果iPhone6s移动联通电信4G手机16G苏宁正品-tmall.com天猫",
+            "type": "url",
+            "url": "https://detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-12588279930.66.4XQ0It&id=523814861817&rn=af1c30777bc4255f5d47c0d8123256d5&abbucket=14&skuId=3116866973950"
+         } ],
+         "date_added": "13078293343670122",
+         "date_modified": "13091544204602497",
+         "id": "2",
+         "name": "其他书签",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13078293343670127",
+         "date_modified": "0",
+         "id": "3",
+         "name": "移动设备书签",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

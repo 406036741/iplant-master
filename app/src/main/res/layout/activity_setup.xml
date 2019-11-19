@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa">
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="当前服务器地址:"
+            />
+        <TextView
+            android:id="@+id/tv_serverip"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="CurrentIPonClick"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="新的服务器地址:"
+            />
+
+        <EditText
+            android:id="@+id/et_serverip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iforminput_bg"
+            android:hint="xxx.xxx.xxx.xxx:xxxx"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/login"
+        android:onClick="OnSave"
+        android:text="保存"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

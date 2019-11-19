@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="bga-adapter-1.2.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../zxingdemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-adapter/1.2.0/res" />
+      <root url="jar://$PROJECT_DIR$/../zxingdemo/build/intermediates/exploded-aar/cn.bingoogolapple/bga-adapter/1.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-adapter/1.2.0/4278b617bd7d2d36422e68f2c50b99b932ac3756/bga-adapter-1.2.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.bingoogolapple/bga-adapter/1.2.0/4278b617bd7d2d36422e68f2c50b99b932ac3756/bga-adapter-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

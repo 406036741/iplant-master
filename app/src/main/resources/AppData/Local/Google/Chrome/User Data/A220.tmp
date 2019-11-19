@@ -1,0 +1,91 @@
+{
+   "app_list": {
+      "app_launch_count": 0,
+      "last_app_launch_ping": "13080096000000000",
+      "last_launch_ping": "13080096000000000",
+      "launch_count": 0
+   },
+   "browser": {
+      "enabled_labs_experiments": [  ],
+      "hung_plugin_detect_freq": 2000,
+      "last_redirect_origin": "",
+      "plugin_message_response_timeout": 25000
+   },
+   "hardware_acceleration_mode_previous": true,
+   "intl": {
+      "app_locale": "zh-CN"
+   },
+   "local_state": {
+      "multiple_profile_prefs_version": 3
+   },
+   "ntp": {
+      "promo_resource_cache_update": "1435666793.041529"
+   },
+   "plugins": {
+      "resource_cache_update": "1435666848.042054"
+   },
+   "policy": {
+      "last_statistics_update": "13080140388045445"
+   },
+   "profile": {
+      "info_cache": {
+         "Default": {
+            "active_time": 1435666870.135021,
+            "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_26",
+            "background_apps": false,
+            "is_ephemeral": false,
+            "is_omitted_from_profile_list": false,
+            "is_using_default_avatar": true,
+            "is_using_default_name": true,
+            "managed_user_id": "",
+            "name": "第 1 位用户",
+            "user_name": ""
+         }
+      },
+      "last_active_profiles": [  ],
+      "last_used": "Default"
+   },
+   "show-first-run-bubble-option": 0,
+   "shutdown": {
+      "num_processes": 1,
+      "num_processes_slow": 0,
+      "type": 1
+   },
+   "uninstall_metrics": {
+      "installation_date2": "1433034513",
+      "launch_count": "38"
+   },
+   "user_experience_metrics": {
+      "low_entropy_source2": 3121,
+      "machine_id": 11305020,
+      "session_id": 37,
+      "stability": {
+         "child_process_crash_count": 0,
+         "crash_count": 2,
+         "debugger_not_present": 38,
+         "execution_phase": 700,
+         "exited_cleanly": true,
+         "extension_renderer_crash_count": 0,
+         "incomplete_session_end_count": 0,
+         "last_timestamp_sec": "1435667074",
+         "launch_count": 38,
+         "launch_time_sec": "1435666788",
+         "page_load_count": 0,
+         "plugin_stats2": [ {
+            "crashes": 0,
+            "instances": 0,
+            "launches": 26,
+            "loading_errors": 0,
+            "name": "Shockwave Flash"
+         } ],
+         "renderer_crash_count": 0,
+         "renderer_hang_count": 0,
+         "session_end_completed": true,
+         "stats_buildtime": "1423031131",
+         "stats_version": "40.0.2214.111"
+      }
+   },
+   "was": {
+      "restarted": false
+   }
+}

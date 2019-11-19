@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Devices</key>
+	<dict>
+		<key>A6A22FFF10DF65B7</key>
+		<dict>
+			<key>Build Version</key>
+			<string>13G36</string>
+			<key>Connected</key>
+			<date>2016-11-12T01:07:30Z</date>
+			<key>Device Class</key>
+			<string>iPad</string>
+			<key>Family ID</key>
+			<integer>10022</integer>
+			<key>Firmware Version</key>
+			<integer>256</integer>
+			<key>Firmware Version String</key>
+			<string>9.3.5</string>
+			<key>ID</key>
+			<string>A6A22FFF10DF65B7</string>
+			<key>Product Type</key>
+			<string>iPad2,5</string>
+			<key>Region Info</key>
+			<string>CH/A</string>
+			<key>Serial Number</key>
+			<string>F85L66G0F196</string>
+			<key>Use Count</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
