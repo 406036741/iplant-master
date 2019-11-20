@@ -23,8 +23,8 @@ public class GudData {
     public static final String KEY_ModuleID ="KEY_ModuleID";
     //地址栏
     //public static String DOMAIN = "http://193rt95681.imwork.net:55909/";
-   // public static String DOMAIN = "http://172.16.128.82:8088/MESCore/";
-    public static String DOMAIN = "http://10.200.10.24:8080/MESCore/";
+    public static String DOMAIN = "http://172.16.128.97:8088/MESCore/";
+  //  public static String DOMAIN = "http://10.200.10.24:8080/MESCore/";
     //public static String DOMAIN = "http://192.168.31.137:8088/MESCore/";
     //public static String DOMAIN = "http://10.200.255.171:8088/MESCore/";
     //内网地址
