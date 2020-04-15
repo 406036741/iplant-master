@@ -52,7 +52,7 @@ public class UserDetailActivity extends BaseActivity {
 		//获取账号
 		String account = ConfigUtils.getString(this, null, GudData.KEY_Account);
 		try {
-			Account myAccount = DBManage.queryBy(Account.class, "account", account);
+			Account myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
 			
 			mName.setText("" + myAccount.name);
 			mAccount.setText(myAccount.account);

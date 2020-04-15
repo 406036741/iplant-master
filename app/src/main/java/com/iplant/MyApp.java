@@ -22,7 +22,7 @@ public class MyApp extends Application {
 		HttpRequestModule.getInstance().init(this);
 		DataFetchModule.getInstance().init(this);
 		ImageFetcherModule.getInstance().init(this);
-        //deleteDatabase("iplant.db");
+       // deleteDatabase("iplant.db");
 		DBManage.create(getApplicationContext(), 1, "iplant.db", 
 				new Class[]{ToolBox.class, Group.class, Account.class}, null);
 	}

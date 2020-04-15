@@ -14,7 +14,7 @@ public class Account extends ModelBase<Account> {
     public String account;
 	
     @DatabaseField
-    public String password;
+    public String encryptPwd;
     
     //名称
     @DatabaseField
@@ -26,10 +26,10 @@ public class Account extends ModelBase<Account> {
 
     //名称
     @DatabaseField
-    public String myID;
+    public String encryptAccount;
 
     @DatabaseField
-    public String sex;
+    public String ADUserID;
     
     //工作
     @DatabaseField
@@ -37,7 +37,10 @@ public class Account extends ModelBase<Account> {
 
     @DatabaseField
     public  int companyID;
-    
+
+    @DatabaseField
+    public  int MessageCount;
+
 	@Override
 	protected Account getMySelf() {
 		// TODO Auto-generated method stub

@@ -1,14 +1,12 @@
 package com.iplant.presenter.view.activity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.support.annotation.IdRes;
-import android.util.Log;
+import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.AnimationUtils;
@@ -23,20 +21,21 @@ import com.iplant.GudData;
 import com.iplant.R;
 import com.iplant.model.Account;
 import com.iplant.model.Group;
+import com.iplant.model.LoginState;
 import com.iplant.model.ToolBox;
 import com.iplant.presenter.GroupPresenter;
+import com.iplant.presenter.UserPresenter;
 import com.iplant.presenter.db.DBManage;
 import com.iplant.presenter.view.Layout.DragLayout;
 import com.iplant.presenter.view.adapter.ItemMainChildAdapter;
 import com.iplant.presenter.view.service.RefreshService;
-import com.iplant.presenter.view.widget.SystemDialog;
 import com.iplant.presenter.view.widget.ToggleButton;
 import com.iplant.util.ConfigUtils;
+import com.iplant.util.DesUtil;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -122,7 +121,7 @@ public class MainActivity extends BaseActivity {
 
     private ToggleButton togglebutton;
 
-    boolean shouldPlayBeep = true;
+
     List<Group> mGroupList;
 
 
@@ -134,24 +133,46 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.SYSTEM_ALERT_WINDOW}, 1);
+
+
+
+        if (GudData.mLoginState.equals(LoginState.Default))
+        {
+           // EmmManager.getInstance().init(this);//初始化中车门户做设备认证，安全接入，应用更新
+            PwdLessLogin();
+        }
+        else if(GudData.mLoginState.equals(LoginState.Logout))
+        {
+            showMsg("账户已退出请重新登录");
+            jumpTo(LoginActivity.class);
+            finish();
+        }
+
         setContentView(R.layout.activity_main);
         EventBus.getDefault().register(this);
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        mFavoriteGroup.groupType = 1;
+
         dl = (DragLayout) findViewById(R.id.dl);
         togglebutton = (ToggleButton) findViewById(R.id.tbtn_Persontask);
-
-
         initView();
         initDragLayout();
-
-
         new Thread() {
             @Override
             public void run() {
+                while (!GudData.mLoginState.equals(LoginState.Login)){
+                    try {
+                        sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
                 String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
                 try {
-                    myAccount = DBManage.queryBy(Account.class, "account", account);
+                    myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 } catch (InstantiationException e) {
@@ -164,7 +185,7 @@ public class MainActivity extends BaseActivity {
                                   public void run() {
                                       mName.setText("" + myAccount.name);
                                       mAccount.setText(myAccount.account);
-                                      new GroupPresenter().update(true, myAccount.myID, myAccount.password);
+                                      new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
                                       startService(new Intent(MainActivity.this, RefreshService.class));
                                   }
                               }
@@ -174,6 +195,17 @@ public class MainActivity extends BaseActivity {
 
         }.start();
 
+    }
+
+
+    private void PwdLessLogin() {
+        String  account="";
+      //   account = AESTool.decryptString(getIntent().getStringExtra("name"));
+        account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
+        String wToken=  DesUtil.CreateToken(account);
+
+        new UserPresenter().login(account, "", "0",wToken);
+        showWaiting("登陆中，请稍后...");
     }
 
     @Override
@@ -234,7 +266,7 @@ public class MainActivity extends BaseActivity {
                         togglebutton.setToggleOn(true);
                         mPerson_judge = 1;
                     }
-                    new GroupPresenter().update(true, myAccount.myID, myAccount.password);
+                    new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -271,7 +303,7 @@ public class MainActivity extends BaseActivity {
 
         EventBus.getDefault().unregister(this);
 
-     //   stopService(new Intent(this, RefreshService.class));
+        //   stopService(new Intent(this, RefreshService.class));
     }
 
     private void initView() {
@@ -470,11 +502,6 @@ public class MainActivity extends BaseActivity {
                     }
 
                 }
-                if (result.haveNewMsg > 0) {
-                    PlayBeep();
-                    SystemDialog.show(getApplicationContext(), "新消息提醒", String.format("您有%d条新消息！", result.haveNewMsg));
-                }
-
             } catch (SQLException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -482,60 +509,6 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    private void PlayBeep() {
-        AudioManager audioService = (AudioManager) getSystemService(this.AUDIO_SERVICE);
-
-        //判断是否为非静音模式
-        if (audioService.getRingerMode() != AudioManager.RINGER_MODE_NORMAL) {
-            shouldPlayBeep = false;
-        }
-
-        MediaPlayer mediaPlayer = CreateMediaPlayer();
-
-        if (shouldPlayBeep && mediaPlayer != null) {
-            //1.开启蜂鸣器
-            mediaPlayer.start();
-        }
-
-        try {
-            //2.获得震动服务。
-            Vibrator vibrator = (Vibrator) getSystemService(this.VIBRATOR_SERVICE);
-            //3.启动震动。
-            //第一个参数，指代一个震动的频率数组。每两个为一组，每组的第一个为等待时间，第二个为震动时间。
-            //   比如  [2000,500,100,400],会先等待2000毫秒，震动500，再等待100，震动400
-            //第二个参数，repest指代从 第几个索引（第一个数组参数） 的位置开始循环震动。
-            //会一直保持循环，我们需要用 vibrator.cancel()主动终止
-            vibrator.vibrate(new long[]{500, 500, 500, 500}, -1);
-        } catch (Exception ex) {
-            Log.e("PlayBeep", ex.toString());
-        }
-
-    }
-
-    private MediaPlayer CreateMediaPlayer() {
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer player) {
-                player.seekTo(0);
-            }
-        });
-
-        //设定数据源，并准备播放
-        AssetFileDescriptor file = getResources().openRawResourceFd(
-                R.raw.pizzicato);
-        try {
-            mediaPlayer.setDataSource(file.getFileDescriptor(), file.getStartOffset(), file.getLength());
-            file.close();
-            mediaPlayer.prepare();
-        } catch (IOException ioe) {
-
-            mediaPlayer = null;
-        }
-        return mediaPlayer;
-    }
 
     public void onMenu(View v) {
         jumpTo(UserActivity.class);

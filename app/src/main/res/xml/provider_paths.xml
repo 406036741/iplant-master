@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <paths>
-        <external-path  name="iplant_photos"  path="DCIM/iplant"/>
+        <root-path name="root" path="." />
+        <files-path name="files" path="." />
+        <external-path name="external" path="." />
+        <external-cache-path name="external_cache" path="." />
+        <external-files-path name="external_file" path="." />
     </paths>
 </resources>

@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.Dialog;
 import android.content.ComponentName;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -21,6 +22,7 @@ import android.provider.MediaStore;
 import android.support.annotation.IdRes;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
+import android.support.v4.os.EnvironmentCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
@@ -100,10 +102,17 @@ public class WebActivity extends BaseActivity {
     JSImpl myJsImpl = new JSImpl();
     private DragLayout dl;
     String mCameraFilePath = null;
-    String mImgPath = null;
+    Uri mCameraUri = null;
+
+    // 是否是Android 10以上手机
+    private boolean isAndroidQ = Build.VERSION.SDK_INT >= 29;
+
     ValueCallback<Uri[]> mFilePathCallback;
     public static final int REQUEST_SELECT_FILE = 10000;
     public static final int REQUEST_SELECT_CAPTURE = 10001;
+
+    // 申请相机权限的requestCode
+    private static final int PERMISSION_CAMERA_REQUEST_CODE = 0x00000012;
 
     private Dialog mLoadingDialog;
     private ToggleButton togglebutton;
@@ -111,43 +120,50 @@ public class WebActivity extends BaseActivity {
     private static BarcodeReader barcodeReader;
 
     String QRCallback;
-    Context wContext = null;
+    Context mContext = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
-        wContext = this;
-
-        ActivityCompat.requestPermissions(WebActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.READ_PHONE_STATE, "com.huawei.camera.permission.PRIVATE"}, 1);
+        mContext = this;
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE | WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-        new Thread() {
-            @Override
-            public void run() {
-                try {
-                    String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
-                    myAccount = DBManage.queryBy(Account.class, "account", account);
-                    String wLoginID = DesUtil.decrypt(myAccount.myID);
-                    originUrl = getIntent().getStringExtra(GudData.KEY_URL);
-                    mModuleID = getIntent().getStringExtra(GudData.KEY_ModuleID);
-                    mImgPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString();
-                    new File(mImgPath).mkdirs();
-                    myJsImpl.registerNotify();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            initQRCode();
-                            initView();
-                            initDragLayout();
-                        }
-                    });
-                } catch (Exception e) {
-                    e.printStackTrace();
+        try {
+            String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
+            myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
+            String wLoginID = DesUtil.decrypt(myAccount.encryptAccount);
+            originUrl = getIntent().getStringExtra(GudData.KEY_URL);
+            mModuleID = getIntent().getStringExtra(GudData.KEY_ModuleID);
+            myJsImpl.registerNotify();
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    initQRCode();
+                    initView();
+                    initDragLayout();
                 }
-            }
-        }.start();
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
+    /**
+     * 处理权限申请的回调。
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == PERMISSION_CAMERA_REQUEST_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                //允许权限，有调起相机拍照。
+                openCamera();
+            } else {
+                //拒绝权限，弹出提示框。
+                Toast.makeText(this, "拍照权限被拒绝", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
 
     private void initQRCode() {
         // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -308,7 +324,7 @@ public class WebActivity extends BaseActivity {
                 mWebView.clearCache(true);
                 mWebView.clearHistory();
                 if (mLoadingDialog == null)
-                    mLoadingDialog = LoadingDialogUtils.createLoadingDialog(wContext, "加载中...");
+                    mLoadingDialog = LoadingDialogUtils.createLoadingDialog(mContext, "加载中...");
                 super.onPageStarted(view, url, favicon);
             }
 
@@ -387,33 +403,37 @@ public class WebActivity extends BaseActivity {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0: {
-                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE);
-                        Uri wUri = null;
-                        try {
-                            if (Build.VERSION.SDK_INT >= 24) {
-                                mCameraFilePath = mImgPath + "/iplant/" + System.currentTimeMillis() + ".jpg";
-                                File outputImage = new File(mCameraFilePath);
-                                if (!outputImage.getParentFile().exists()) {
-                                    outputImage.getParentFile().mkdirs();
-                                }
-                                wUri = FileProvider.getUriForFile(WebActivity.this, WebActivity.this.getPackageName() + ".fileprovider", outputImage);
-
-                            } else {
-
-                                mCameraFilePath = mImgPath + "/iplant/" + System.currentTimeMillis() + ".jpg";
-                                File outputImage = new File(mCameraFilePath);
-                                if (!outputImage.getParentFile().exists()) {
-                                    outputImage.getParentFile().mkdirs();
-                                }
-                                wUri = Uri.fromFile(outputImage);
-                            }
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, wUri);
-                            startActivityForResult(intent, REQUEST_SELECT_CAPTURE);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-
-
+                        checkPermissionAndCamera();
+//                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE);
+//                        Uri wUri = null;
+//                        try {
+//                            if (Build.VERSION.SDK_INT >= 24) {
+//                                mCameraFilePath = mImgPath + "/iplant/" + System.currentTimeMillis() + ".jpg";
+//                                File outputImage = new File(mCameraFilePath);
+//                                if (!outputImage.getParentFile().exists()) {
+//                                    outputImage.getParentFile().mkdirs();
+//                                }
+//                                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+//                                wUri =  FileProvider.getUriForFile(mContext.getApplicationContext(), BuildConfig.APPLICATION_ID+".provider",outputImage);
+//
+//                            } else {
+//
+//                                mCameraFilePath = mImgPath + "/iplant/" + System.currentTimeMillis() + ".jpg";
+//                                File outputImage = new File(mCameraFilePath);
+//                                if (!outputImage.getParentFile().exists()) {
+//                                    outputImage.getParentFile().mkdirs();
+//                                }
+//                                wUri = Uri.fromFile(outputImage);
+//                            }
+//                            if(PublicUtile.getInstance().IsLessPermission(mContext,"com.huawei.camera.permission.PRIVATE"))
+//                            {
+//                                Toast.makeText(mContext, "need Permission:com.huawei.camera.permission.PRIVATE", Toast.LENGTH_LONG);
+//                            }
+//                            intent.putExtra(MediaStore.EXTRA_OUTPUT, wUri);
+//                            startActivityForResult(intent, REQUEST_SELECT_CAPTURE);
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        }
                     }
                     break;
                     case 1: {
@@ -438,64 +458,190 @@ public class WebActivity extends BaseActivity {
     }
 
 
+    /**
+     * 检查权限并拍照。
+     * 调用相机前先检查权限。
+     */
+    private void checkPermissionAndCamera() {
+//        int hasCameraPermission = ContextCompat.checkSelfPermission(getApplication(), Manifest.permission.CAMERA);
+//        if (hasCameraPermission == PackageManager.PERMISSION_GRANTED) {
+//            //有调起相机拍照。
+//            openCamera();
+//        } else {
+        //没有权限，申请权限。
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                PERMISSION_CAMERA_REQUEST_CODE);
+//        }
+    }
+
+    /**
+     * 调起相机拍照
+     */
+    private void openCamera() {
+        try {
+            Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            // 判断是否有相机
+            if (captureIntent.resolveActivity(getPackageManager()) != null) {
+                File photoFile = null;
+                Uri photoUri = null;
+
+                if (isAndroidQ) {
+                    // 适配android 10
+                    photoUri = createImageUri();
+                } else {
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    if (photoFile != null) {
+                        mCameraFilePath = photoFile.getAbsolutePath();
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                            //适配Android 7.0文件权限，通过FileProvider创建一个content类型的Uri
+                            photoUri = FileProvider.getUriForFile(this, getPackageName() + ".provider", photoFile);
+                        } else {
+                            photoUri = Uri.fromFile(photoFile);
+                        }
+                    }
+                }
+
+                mCameraUri = photoUri;
+
+                if (photoUri != null) {
+                    captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
+                    captureIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+                    startActivityForResult(captureIntent, REQUEST_SELECT_CAPTURE);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 创建图片地址uri,用于保存拍照后的照片 Android 10以后使用这种方法
+     */
+    private Uri createImageUri() {
+        Uri wUri = null;
+        try {
+            String status = Environment.getExternalStorageState();
+            // 判断是否有SD卡,优先使用SD卡存储,当没有SD卡时使用手机存储
+            if (status.equals(Environment.MEDIA_MOUNTED)) {
+                wUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new ContentValues());
+            } else {
+                wUri = getContentResolver().insert(MediaStore.Images.Media.INTERNAL_CONTENT_URI, new ContentValues());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return wUri;
+    }
+
+    /**
+     * 创建保存图片的文件
+     */
+    private File createImageFile() throws IOException {
+        File tempFile = null;
+        try {
+            String imageName = System.currentTimeMillis() + ".jpg";
+            File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+            if (!storageDir.exists()) {
+                storageDir.mkdir();
+            }
+            tempFile = new File(storageDir, imageName);
+            if (!Environment.MEDIA_MOUNTED.equals(EnvironmentCompat.getStorageState(tempFile))) {
+                return null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tempFile;
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (resultCode != RESULT_OK) {
-            if (requestCode == REQUEST_SELECT_FILE || requestCode == REQUEST_SELECT_CAPTURE) {
-                if (mFilePathCallback != null) {
+        try {
+            String mImgPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString();
+            if (resultCode != RESULT_OK) {
+                if (requestCode == REQUEST_SELECT_FILE || requestCode == REQUEST_SELECT_CAPTURE) {
+                    if (mFilePathCallback != null) {
+                        mFilePathCallback.onReceiveValue(null);
+                    }
+                    mFilePathCallback = null;
+                }
+                return;
+            }
+            if (requestCode == 1001 && data != null) {
+                Bundle bundle = data.getExtras();
+
+                String result = bundle.getString("result");
+                QRResult QRResult = new QRResult();
+                if (TextUtils.isEmpty(result)) {
+                    QRResult.errorcode = MyError.UNKNOWN;
+                } else {
+                    QRResult.qrcode = result;
+                }
+
+                EventBus.getDefault().post(QRResult);
+            } else if (requestCode == REQUEST_SELECT_FILE && data != null) {
+                if (mFilePathCallback == null)
+                    return;
+
+                Uri uri = data.getData();
+
+                new File(mImgPath).mkdirs();
+                String outFile = mImgPath + System.currentTimeMillis() + ".jpg";
+
+                try {
+                    Bitmap photo = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                    new ImageFactory().compressAndGenImage(photo, outFile, 500);
+                    Uri wUrl = Uri.fromFile(new File(outFile));
+                    mFilePathCallback.onReceiveValue(new Uri[]{wUrl});
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    mFilePathCallback.onReceiveValue(null);
+                }
+
+                mFilePathCallback = null;
+            } else if (requestCode == REQUEST_SELECT_CAPTURE) {
+                try {
+                    if (mFilePathCallback == null)
+                        return;
+                    if (isAndroidQ) {
+                        // Android 10 使用图片uri加载
+                        mFilePathCallback.onReceiveValue(new Uri[]{mCameraUri});
+                    } else {
+                        boolean isExist = new File(mCameraFilePath).exists();
+                        if (isExist) {
+                            String outFile = mImgPath + System.currentTimeMillis() + ".jpg";
+                            new ImageFactory().compressAndGenImage(mCameraFilePath, outFile, 500, true);
+                            mFilePathCallback.onReceiveValue(new Uri[]{Uri.fromFile(new File(outFile))});
+                        }
+
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                     mFilePathCallback.onReceiveValue(null);
                 }
                 mFilePathCallback = null;
+                //            String outFile = mImgPath + System.currentTimeMillis() + ".jpg";
+                //            boolean isExist = new File(outFile).exists();
+                //            try {
+                //                new ImageFactory().compressAndGenImage(mCameraFilePath, outFile, 500, true);
+                //                mFilePathCallback.onReceiveValue(new Uri[]{Uri.fromFile(new File(outFile))});
+                //            } catch (IOException e) {
+                //                e.printStackTrace();
+                //                mFilePathCallback.onReceiveValue(null);
+                //            }
+                //            mFilePathCallback = null;
             }
-            return;
+
+            super.onActivityResult(requestCode, resultCode, data);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        if (requestCode == 1001 && data != null) {
-            Bundle bundle = data.getExtras();
-
-            String result = bundle.getString("result");
-            QRResult QRResult = new QRResult();
-            if (TextUtils.isEmpty(result)) {
-                QRResult.errorcode = MyError.UNKNOWN;
-            } else {
-                QRResult.qrcode = result;
-            }
-
-            EventBus.getDefault().post(QRResult);
-        } else if (requestCode == REQUEST_SELECT_FILE && data != null) {
-            if (mFilePathCallback == null)
-                return;
-
-            Uri uri = data.getData();
-            String outFile = mImgPath + System.currentTimeMillis() + ".jpg";
-
-            try {
-                Bitmap photo = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
-                new ImageFactory().compressAndGenImage(photo, outFile, 500);
-                mFilePathCallback.onReceiveValue(new Uri[]{Uri.fromFile(new File(outFile))});
-            } catch (IOException e) {
-                e.printStackTrace();
-                mFilePathCallback.onReceiveValue(null);
-            }
-
-            mFilePathCallback = null;
-        } else if (requestCode == REQUEST_SELECT_CAPTURE) {
-            if (mFilePathCallback == null)
-                return;
-
-            String outFile = mImgPath + System.currentTimeMillis() + ".jpg";
-            boolean isExist = new File(outFile).exists();
-            try {
-                new ImageFactory().compressAndGenImage(mCameraFilePath, outFile, 500, true);
-                mFilePathCallback.onReceiveValue(new Uri[]{Uri.fromFile(new File(outFile))});
-            } catch (IOException e) {
-                e.printStackTrace();
-                mFilePathCallback.onReceiveValue(null);
-            }
-            mFilePathCallback = null;
-        }
-
-        super.onActivityResult(requestCode, resultCode, data);
     }
 
 

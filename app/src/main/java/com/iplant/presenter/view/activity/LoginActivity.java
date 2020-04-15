@@ -14,20 +14,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.iplant.GudData;
-import com.iplant.MyError;
 import com.iplant.R;
-import com.iplant.model.Account;
 import com.iplant.presenter.UserPresenter;
 import com.iplant.presenter.view.widget.ClearEditText;
 import com.iplant.presenter.view.widget.PwdEditText;
 import com.iplant.util.ConfigUtils;
 import com.iplant.util.DesUtil;
 import com.iplant.util.MacUtil;
-import com.iplant.util.ShrisTools;
 import com.iplant.util.VersionUtils;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -35,7 +31,7 @@ import butterknife.ButterKnife;
 
 /**
  * @author lildu
- *         登陆
+ * 登陆
  */
 public class LoginActivity extends BaseActivity {
     @Bind(R.id.account)
@@ -57,14 +53,17 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         initView();
         EventBus.getDefault().register(this);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_EXTERNAL_STORAGE, }, MY_PERMISSIONS_REQUEST_READ_CONTACTS);
-       // initNFC();
+                Manifest.permission.READ_EXTERNAL_STORAGE,}, MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+
+        // initNFC();
     }
+
     /**
      * 初始化数据
      */
@@ -87,17 +86,15 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        byte[] myNFCID = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID);
-        this.mid = ShrisTools.byteToString(myNFCID);
-
-        showMsg(mid);
+//        byte[] myNFCID = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID);
+//        this.mid = ShrisTools.byteToString(myNFCID);
+//        showMsg(mid);
     }
+
     @Override
     protected void onResume() {
         super.onResume();
         SetIllustrate();
-
-
     }
 
     private void SetIllustrate() {
@@ -114,16 +111,15 @@ public class LoginActivity extends BaseActivity {
             case MY_PERMISSIONS_REQUEST_READ_CONTACTS: {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
                     // permission was granted, yay! Do the
                     // contacts-related task you need to do.
-                   // new UpdatePresenter(this).doCheckUpdate();
+                    // new UpdatePresenter(this).doCheckUpdate();
 
                 } else {
 
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
-                    finish();
+                    // finish();
                 }
                 return;
             }
@@ -140,7 +136,7 @@ public class LoginActivity extends BaseActivity {
 
     private void initView() {
         try {
-        /*从缓存中读取状态*/
+            /*从缓存中读取状态*/
             mAccount.setText(ConfigUtils.getString(this, null, GudData.KEY_Account));
             String wSaveIP = ConfigUtils.getString(this, null, GudData.KEY_ServerIP);
             if (!wSaveIP.isEmpty())
@@ -170,19 +166,28 @@ public class LoginActivity extends BaseActivity {
         }
         mac = "0";
         String account = mAccount.getEditableText().toString().trim();
-         GudData.Login_PASSWORD = mPassword.getEditableText().toString().trim();
+        GudData.Login_PASSWORD = mPassword.getEditableText().toString().trim();
 
         //检查
         if (TextUtils.isEmpty(account) || TextUtils.isEmpty(GudData.Login_PASSWORD)) {
             showMsg("用户名，密码不合法，请核对后再试！");
             return;
         }
+
+        /*保存密码到缓存中*/
+        if (mCheckBox.isChecked()) {
+            ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "checked");
+        } else {
+            ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "unchecked");
+        }
         //默认内网，如果内网不可用自动切换到外网
 //		GudData.DOMAIN=NetConnect.testUrlWithTimeOut(GudData.LANIP,GudData.INTERNET,2000);
-        new UserPresenter().login(account,GudData.Login_PASSWORD, mac);
+        new UserPresenter().login(account, GudData.Login_PASSWORD, mac,"");
         HideKeyboard();
         showWaiting("登陆中，请稍后...");
     }
+
+
 
     /**
      * 点击了重置密码
@@ -191,37 +196,6 @@ public class LoginActivity extends BaseActivity {
      */
     public void onPwdRset(View v) {
         jumpTo(PwdResetActivity.class);
-    }
-
-    @Subscribe
-    public void onEventMainThread(Account myAccount) {
-        closeWaiting();
-        if (!myAccount.isValid()) {
-            if (myAccount.errorcode == MyError.DISCONNECT ||
-                    myAccount.errorcode == MyError.DNS_RESOLVE ||
-                    myAccount.errorcode == MyError.NET ||
-                    myAccount.errorcode == MyError.TIMEOUT) {
-                showMsg("网络连接超时，请检查网络");
-            } else {
-                showMsg("登陆失败，请确认用户名和密码");
-            }
-        } else {
-
-
-			/*保存密码到缓存中*/
-
-            if (mCheckBox.isChecked()) {
-                ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "checked");
-            } else {
-                ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "unchecked");
-            }
-            GudData.myAccount = myAccount;
-            ConfigUtils.saveData(this, null, GudData.KEY_Account, myAccount.account);
-            ConfigUtils.saveData(this, null, GudData.KEY_PASSWORD,DesUtil.encrypt(GudData.Login_PASSWORD));
-            jumpTo(MainActivity.class);
-            finish();
-        }
-
     }
 
     public void onSetUp(View view) {

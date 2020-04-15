@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.text.MessageFormat;
+import java.util.Calendar;
+import java.util.TimeZone;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -19,6 +22,7 @@ public class DesUtil {
 
     private static Logger logger = LoggerFactory.getLogger(DesUtil.class);
     public final static String appSecret="c5e330214fb33e2d80f14e3fc45ed214";
+
     private final static String DES = "DES";
 
     /**
@@ -291,4 +295,31 @@ public class DesUtil {
      * SessionContants.Key); System.err.println(encode); String dcode =
      * decrypt(encode, SessionContants.Key); System.err.println(dcode); }
      */
+
+    public static String CreateToken(String account) {
+        String wToken = "";
+
+        try {
+            Calendar wCalendar=Calendar.getInstance(TimeZone.getTimeZone("Asia/Shanghai"));
+
+            String wT4 = account.substring(0, account.length() / 2);
+            String wT2 = account.substring(account.length() / 2);
+            String wT3 = MessageFormat.format("{0}-{1}", String.valueOf(wCalendar.get(Calendar.YEAR)),
+                    String.format("%02d", wCalendar.get(Calendar.MONTH) + 1));
+            String wT5 = String.format("%02d", wCalendar.get(Calendar.DAY_OF_MONTH));
+            String wT1 = MessageFormat.format("{0}:{1}:{2}",
+                    String.format("%02d", wCalendar.get(Calendar.HOUR_OF_DAY)),
+                    String.format("%02d", wCalendar.get(Calendar.MINUTE)),
+                    String.format("%02d", wCalendar.get(Calendar.SECOND)));
+
+            wToken = MessageFormat.format("{0}+-abc072-+{1}+-abc072-+{2}+-abc072-+{3}+-abc072-+{4}", wT1, wT2, wT3, wT4, wT5);
+
+            wToken = DesUtil.encrypt(wToken, appSecret);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error(e.getMessage());
+        }
+
+        return wToken;
+    }
 }

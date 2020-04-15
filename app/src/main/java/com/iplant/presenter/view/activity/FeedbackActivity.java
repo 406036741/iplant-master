@@ -121,7 +121,7 @@ public class FeedbackActivity extends BaseActivity {
         String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
         try {
 
-            myAccount = DBManage.queryBy(Account.class, "account", account);
+            myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

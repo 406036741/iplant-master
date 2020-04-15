@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class GroupPresenter {
-
+    static int mCount=1;
     //用于传递刷新操作
     public static class GroupUpdateResult extends ModelBase<GroupUpdateResult> {
         private static final long serialVersionUID = -7307165540593626000L;
@@ -43,7 +43,7 @@ public class GroupPresenter {
                     GroupUpdateResult result = new GroupUpdateResult();
                     if (retcode != MyError.SUCCESS) {
                         result.errorcode = retcode;
-                        result.erorMsg = extraMsg;
+                        result.errorMsg = extraMsg;
                         EventBus.getDefault().post(result);
                         return;
                     }
@@ -91,11 +91,8 @@ public class GroupPresenter {
                                     JSONObject toolObj = moduleArr.getJSONObject(j);
                                     ToolBox myBox = new ToolBox();
                                     myBox.moduleId = toolObj.getString("ID").trim();
-
 //                                    myBox.groupType = mFavorite.get(myBox.moduleId) == null ? 0 : 1;
-
                                     myBox.groupName = myGroup.groupID;
-
                                     myBox.unReadCount = toolObj.getInt("MessageCount");
                                     myBox.name = toolObj.getString("Name").trim();
                                     myBox.companyid = 0;
@@ -124,9 +121,9 @@ public class GroupPresenter {
                             } else {
                                 if (!tools.equals(cache)) {
                                     bHaveUpdate = true;
-                                    if (tools.unReadCount > cache.unReadCount) {
-                                        newMsg += tools.unReadCount - cache.unReadCount;
-                                    }
+//                                    if (tools.unReadCount > cache.unReadCount) {
+//                                        newMsg += tools.unReadCount - cache.unReadCount;
+//                                    }
                                 }
                             }
 
@@ -145,9 +142,7 @@ public class GroupPresenter {
                             for (Group myGroup : groupList) {
                                 myGroup.insertOrUpdate();
                             }
-
                             for (ToolBox tools : newList) {
-
                                 tools.insertOrUpdate();
                             }
                         }

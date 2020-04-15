@@ -83,7 +83,7 @@ public class SimpleMailSender {
             mailMessage.setFrom(from);
             // 创建邮件的接收者地址，并设置到邮件消息中
             Address to = new InternetAddress(mailInfo.getToAddress());
-            // Message.RecipientType.TO属性表示接收者的类型为TO
+            // ZMessage.RecipientType.TO属性表示接收者的类型为TO
             mailMessage.setRecipient(Message.RecipientType.TO,to);
             // 设置邮件消息的主题
             mailMessage.setSubject(mailInfo.getSubject());

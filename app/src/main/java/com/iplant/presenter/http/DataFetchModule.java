@@ -7,15 +7,15 @@
  */
 package com.iplant.presenter.http;
 
-import java.util.Map;
-
-import org.json.JSONObject;
+import android.content.Context;
 
 import com.iplant.MyError;
 import com.iplant.presenter.http.DataFetchListener.JsonListener;
 import com.iplant.presenter.http.DataFetchListener.ObjectListener;
 
-import android.content.Context;
+import org.json.JSONObject;
+
+import java.util.Map;
 
 /**
  * 对网络模块的进一步封装，对于请求，直接返回一个实体类
@@ -351,7 +351,7 @@ public class DataFetchModule{
 							}
 							try {
 								JSONObject myObject = new JSONObject(data);
-								
+
 								//适应iplant项目格式
 								if (myObject.has("resultCode") && myObject.has("returnObject")){
 									int resultCode = myObject.getInt("resultCode");

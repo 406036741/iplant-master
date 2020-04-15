@@ -21,6 +21,8 @@ import java.sql.SQLException;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+import static com.iplant.util.DesUtil.encrypt;
+
 /**
  * @author lildu
  *	密码修改界面
@@ -89,13 +91,13 @@ public class PwdChangeActivity extends BaseActivity {
 		}
 		
 		try {
-			Account myAccount = DBManage.queryBy(Account.class, "account", account);
-			if (!myAccount.password.equals(oldPwd)){
+			Account myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
+			if (!myAccount.encryptPwd.equals(encrypt(oldPwd))){
 				showMsg("密码错误，请重新输入！");
 				return;
 			}
 			showWaiting("正在提交...");
-			new UserPresenter().changePwd(myAccount.myID, oldPwd, newPwd);
+			new UserPresenter().changePwd(myAccount.encryptAccount, oldPwd, newPwd);
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

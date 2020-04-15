@@ -6,6 +6,15 @@ android {
             storeFile file('D:/tools/android/workspace/iplant/iplant')
             storePassword '123456'
         }
+
+        signingConfigs {
+            debug {
+                storeFile file('zhouquan.jks')//你的key,文件
+                storePassword "00oooo00" // 你的签名密码
+                keyAlias "key0"  //别名
+                keyPassword "00oooo00" // 密码
+            }
+        }
     }
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
@@ -29,26 +38,33 @@ android {
     }
     productFlavors {
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 dependencies {
-    implementation  files('libs/butterknife-7.0.1.jar')
-    implementation  files('libs/eventbus-3.0.0.jar')
-    implementation  files('libs/ormlite-android-4.49.jar')
-    implementation  files('libs/ormlite-core-4.49.jar')
-    implementation  files('libs/persistence-api-1.0.2.jar')
-    implementation  files('libs/universal-image-loader-1.9.5.jar')
-    implementation  files('libs/volley-20160803.jar')
-    implementation  files('libs/zxing.jar')
-    implementation  files('libs/mail.jar')
-    implementation  files('libs/activation.jar')
-    implementation  files('libs/additionnal.jar')
-    implementation  files('libs/commons-email-1.2.jar')
-    implementation  files('libs/nineoldandroids-2.4.0.jar')
-    implementation  'com.android.support:support-v4:28.0.0'
-    implementation  'com.android.support:appcompat-v7:28.0.0'
-    implementation  'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation  project(':qrcodecore')
-    implementation  project(':zbar')
-    implementation  project(':DataCollectionLib')
+    implementation files('libs/butterknife-7.0.1.jar')
+    implementation files('libs/eventbus-3.0.0.jar')
+    implementation files('libs/ormlite-android-4.49.jar')
+    implementation files('libs/ormlite-core-4.49.jar')
+    implementation files('libs/persistence-api-1.0.2.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation files('libs/volley-20160803.jar')
+    implementation files('libs/zxing.jar')
+    implementation files('libs/mail.jar')
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/commons-email-1.2.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation project(':qrcodecore')
+    implementation project(':zbar')
+    implementation project(':DataCollectionLib')
+    implementation(name: 'MCM_SDK-release', ext: 'aar')
+    implementation files('libs/fastjson-1.1.26.jar')
 }
