@@ -75,55 +75,60 @@ public class ItemMainChildAdapter extends BaseAdapter implements OnLongClickList
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ToolBox data = (ToolBox) getItem(position);
-        ViewHolder holder;
-        if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_main_child, null);
+        try {
+            ToolBox data = (ToolBox) getItem(position);
+            ViewHolder holder;
+            if (convertView == null) {
+                convertView = LayoutInflater.from(mContext).inflate(R.layout.item_main_child, null);
 
-            holder = new ViewHolder();
-            holder.icon = (ImageView) convertView.findViewById(R.id.icon);
-            holder.name = (TextView) convertView.findViewById(R.id.name);
-            holder.opration = (ImageView) convertView.findViewById(R.id.opration);
-            holder.msgcount = (TextView) convertView.findViewById(R.id.msgcount);
+                holder = new ViewHolder();
+                holder.icon = (ImageView) convertView.findViewById(R.id.icon);
+                holder.name = (TextView) convertView.findViewById(R.id.moduletitle);
+                holder.opration = (ImageView) convertView.findViewById(R.id.opration);
+                holder.msgcount = (TextView) convertView.findViewById(R.id.msgcount);
 
-            convertView.setTag(holder);
-        } else {
-            holder = (ViewHolder) convertView.getTag();
-        }
-
-        holder.opration.setTag(R.id.group, data);
-        holder.opration.setClickable(true);
-        holder.opration.setOnClickListener(this);
-
-        convertView.setClickable(true);
-        convertView.setOnLongClickListener(this);
-        convertView.setTag(R.id.group, data);
-        convertView.setOnClickListener(this);
-
-        if (data.unReadCount > 0 && data.unReadCount <= 99) {
-            holder.msgcount.setVisibility(View.VISIBLE);
-            holder.msgcount.setText(String.valueOf(data.unReadCount));
-        } else if (data.unReadCount > 99) {
-            holder.msgcount.setVisibility(View.VISIBLE);
-            holder.msgcount.setText(String.valueOf("99+"));
-        } else {
-            holder.msgcount.setVisibility(View.GONE);
-        }
-
-        if (mGroup.mbInEditMode) {
-            if (data.groupType == 1) {
-                holder.opration.setImageResource(R.drawable.lose);
+                convertView.setTag(holder);
             } else {
-                holder.opration.setImageResource(R.drawable.add);
+                holder = (ViewHolder) convertView.getTag();
             }
-            holder.opration.setVisibility(View.VISIBLE);
-            holder.msgcount.setVisibility(View.GONE);
-        } else {
-            holder.opration.setVisibility(View.GONE);
-        }
 
-        holder.name.setText(data.name);
-        ImageFetcherModule.getInstance().attachImage(data.imgUrl, holder.icon);
+            holder.opration.setTag(R.id.group, data);
+            holder.opration.setClickable(true);
+            holder.opration.setOnClickListener(this);
+
+            convertView.setClickable(true);
+            convertView.setOnLongClickListener(this);
+            convertView.setTag(R.id.group, data);
+            convertView.setOnClickListener(this);
+
+            if (data.unReadCount > 0 && data.unReadCount <= 99) {
+                holder.msgcount.setVisibility(View.VISIBLE);
+                holder.msgcount.setText(String.valueOf(data.unReadCount));
+            } else if (data.unReadCount > 99) {
+                holder.msgcount.setVisibility(View.VISIBLE);
+                holder.msgcount.setText(String.valueOf("99+"));
+            } else {
+                holder.msgcount.setVisibility(View.GONE);
+            }
+
+//            if (mGroup.mbInEditMode) {
+//                if (data.groupType == 1) {
+//                    holder.opration.setImageResource(R.drawable.lose);
+//                } else {
+//                    holder.opration.setImageResource(R.drawable.add);
+//                }
+//                holder.opration.setVisibility(View.VISIBLE);
+//                holder.msgcount.setVisibility(View.GONE);
+//            } else {
+//                holder.opration.setVisibility(View.GONE);
+//            }
+
+            holder.name.setText(data.name.trim());
+
+            ImageFetcherModule.getInstance().attachImage(data.imgUrl, holder.icon);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return convertView;
     }

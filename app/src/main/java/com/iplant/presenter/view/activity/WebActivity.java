@@ -24,6 +24,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v4.os.EnvironmentCompat;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
@@ -766,4 +767,22 @@ public class WebActivity extends BaseActivity {
     static BarcodeReader getBarcodeObject() {
         return barcodeReader;
     }
+
+    /**
+     * 重写onKeyDown，当浏览网页，WebView可以后退时执行后退操作。
+     * false 执行安卓返回方法即webview返回上一页 true 表示h5处理返回事件，android端不再处理
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            mWebView.loadUrl("javascript:backListener()" );
+        }
+        return true;
+    }
+
+
 }

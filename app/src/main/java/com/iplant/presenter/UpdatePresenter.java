@@ -129,40 +129,44 @@ public class UpdatePresenter {
      */
     public void showUpdataDialog() {
 
-        AlertDialog.Builder builer = new AlertDialog.Builder(mContext);
-        builer.setTitle("新版本升级");
-        builer.setMessage(info.getDescription());
+        try {
+            AlertDialog.Builder builer = new AlertDialog.Builder(mContext);
+            builer.setTitle("新版本升级");
+            builer.setMessage(info.getDescription());
 
-        downloadManagerUtil = new DownloadManagerUtil(mContext);
+            downloadManagerUtil = new DownloadManagerUtil(mContext);
 
-        //当点确定按钮时从服务器上下载 新的apk 然后安装
-        builer.setPositiveButton("更新", new OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                //调起系统下载功能
-                if (downloadId != 0) {
-                    downloadManagerUtil.clearCurrentTask(downloadId);
+            //当点确定按钮时从服务器上下载 新的apk 然后安装
+            builer.setPositiveButton("更新", new OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    //调起系统下载功能
+                    if (downloadId != 0) {
+                        downloadManagerUtil.clearCurrentTask(downloadId);
+                    }
+                    downloadId = downloadManagerUtil.download(info.getUrl(), "iplantMES", info.getDescription());
                 }
-                downloadId = downloadManagerUtil.download(info.getUrl(), "iplantMES", info.getDescription());
-            }
-        });
-        builer.setNegativeButton("取消", new OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                Log.i(TAG, "取消更新");
-                //closeApp(mContext);
-            }
-        });
-        AlertDialog dialog = builer.create();
-        dialog.setCancelable(false);
-        dialog.setCanceledOnTouchOutside(false);
+            });
+            builer.setNegativeButton("取消", new OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    Log.i(TAG, "取消更新");
+                    //closeApp(mContext);
+                }
+            });
+            AlertDialog dialog = builer.create();
+            dialog.setCancelable(false);
+            dialog.setCanceledOnTouchOutside(false);
 
-        //8.0系统加强后台管理，禁止在其他应用和窗口弹提醒弹窗，如果要弹，必须使用TYPE_APPLICATION_OVERLAY
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            dialog.getWindow().setType((WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY));
-        } else {
-            dialog.getWindow().setType((WindowManager.LayoutParams.TYPE_SYSTEM_ALERT));
+            //8.0系统加强后台管理，禁止在其他应用和窗口弹提醒弹窗，如果要弹，必须使用TYPE_APPLICATION_OVERLAY
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                dialog.getWindow().setType((WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY));
+            } else {
+                dialog.getWindow().setType((WindowManager.LayoutParams.TYPE_SYSTEM_ALERT));
+            }
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+            dialog.show();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
-        dialog.show();
     }
 
 

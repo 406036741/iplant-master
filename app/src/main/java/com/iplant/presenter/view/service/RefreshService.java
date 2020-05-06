@@ -48,7 +48,7 @@ public class RefreshService extends Service {
         mGroupPresenter = new GroupPresenter();
         mUpdatePresenter = new UpdatePresenter(this);
         mMessagePresenter = new MessagePresenter(this);
-
+        startRefresh();
     }
 
     @Override
@@ -58,7 +58,8 @@ public class RefreshService extends Service {
             String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
             myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
             mMessageCount = myAccount.MessageCount;
-            startRefresh();
+            mGroupPresenter.update(true, myAccount.encryptAccount, myAccount.encryptPwd);
+            mMessagePresenter.doCheckMessage(myAccount.encryptAccount, myAccount.encryptPwd);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -75,9 +76,9 @@ public class RefreshService extends Service {
     public void onDestroy() {
         super.onDestroy();
 
-   //     stopRefresh();
+        stopRefresh();
         Toast.makeText(this.getApplication(), "service is over", Toast.LENGTH_LONG);
-    //    EventBus.getDefault().unregister(this);
+        EventBus.getDefault().unregister(this);
     }
 
     /**
@@ -166,19 +167,16 @@ public class RefreshService extends Service {
             if (!result.isValid()) {
 
             } else {
-                  if(result.EXCMessageList.size()>0)
-                  {
-                      for (EXCMessage wEXCMessage :result.EXCMessageList)
-                      {
-                          if(wEXCMessage.Active==0)
-                          {
-                              SystemDialog wSystemDialog = new SystemDialog(getApplicationContext());
-                              wSystemDialog.show(wEXCMessage.Title, wEXCMessage.MessageText, result.EXCMessageList.size());
-                              wEXCMessage.Active=1;
-                          }
-                      }
-                      new UserPresenter().GetMessageState(myAccount.encryptAccount, myAccount.encryptPwd,result.EXCMessageList);
-                  }
+                if (result.EXCMessageList.size() > 0) {
+                    for (EXCMessage wEXCMessage : result.EXCMessageList) {
+                        if (wEXCMessage.Active == 0) {
+                            SystemDialog wSystemDialog = new SystemDialog(getApplicationContext());
+                            wSystemDialog.show(wEXCMessage.Title, wEXCMessage.MessageText, result.EXCMessageList.size());
+                            wEXCMessage.Active = 1;
+                        }
+                    }
+                    new UserPresenter().GetMessageState(myAccount.encryptAccount, myAccount.encryptPwd, result.EXCMessageList);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

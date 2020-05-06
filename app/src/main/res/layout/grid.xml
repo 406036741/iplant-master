@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.iplant.presenter.view.widget.ListGridView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:columnWidth="74dp"
+    android:layout_height="match_parent"
+    android:numColumns="auto_fit"
+    android:columnWidth="90dp"
+    android:verticalSpacing="10dp"
     android:horizontalSpacing="10dp"
-    android:verticalSpacing="30dp"
     android:padding="10dp"
-    android:numColumns="4"
     android:background="@color/HomeBackground"
+    android:scrollbars="none"
+    android:fadeScrollbars="true"
     android:stretchMode="columnWidth"/>

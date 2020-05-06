@@ -68,13 +68,17 @@ public class LoginActivity extends BaseActivity {
      * 初始化数据
      */
     private void initNFC() {
-        NfcAdapter adapter = NfcAdapter.getDefaultAdapter(this);
-        if (null == adapter) {
-            Toast.makeText(this, "设备不支持NFC功能", Toast.LENGTH_SHORT).show();
-        } else if (!adapter.isEnabled()) {
-            Intent intent = new Intent(Settings.ACTION_NFC_SETTINGS);
-            // 根据包名打开对应的设置界面
-            startActivity(intent);
+        try {
+            NfcAdapter adapter = NfcAdapter.getDefaultAdapter(this);
+            if (null == adapter) {
+                Toast.makeText(this, "设备不支持NFC功能", Toast.LENGTH_SHORT).show();
+            } else if (!adapter.isEnabled()) {
+                Intent intent = new Intent(Settings.ACTION_NFC_SETTINGS);
+                // 根据包名打开对应的设置界面
+                startActivity(intent);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -98,11 +102,15 @@ public class LoginActivity extends BaseActivity {
     }
 
     private void SetIllustrate() {
-        String wIP = GudData.DOMAIN.substring(7, GudData.DOMAIN.length() - 1);
-        mVersion.setText(String.format(
-                "当前版本:V%s  服务:%s  \n" +
-                        " 版权所有 上海中车瑞伯德智能系统股份有限公司 @2016 \n" +
-                        "  服务邮箱:zhenghuan.hu@shris.com.cn", VersionUtils.getVersionName(this), wIP));
+        try {
+            String wIP = GudData.DOMAIN.substring(7, GudData.DOMAIN.length() - 1);
+            mVersion.setText(String.format(
+                    "当前版本:V%s  服务:%s  \n" +
+                            " 版权所有 上海中车瑞伯德智能系统股份有限公司 @2016 \n" +
+                            "  服务邮箱:zhenghuan.hu@shris.com.cn", VersionUtils.getVersionName(this), wIP));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -160,31 +168,35 @@ public class LoginActivity extends BaseActivity {
      * @param v
      */
     public void OnLogin(View v) {
-        String mac = MacUtil.getLocalMacAddress();
-        if (mac.trim().isEmpty()) {
-            mac = "000000000000";
-        }
-        mac = "0";
-        String account = mAccount.getEditableText().toString().trim();
-        GudData.Login_PASSWORD = mPassword.getEditableText().toString().trim();
+        try {
+            String mac = MacUtil.getLocalMacAddress();
+            if (mac.trim().isEmpty()) {
+                mac = "000000000000";
+            }
+            mac = "0";
+            String account = mAccount.getEditableText().toString().trim();
+            GudData.Login_PASSWORD = mPassword.getEditableText().toString().trim();
 
-        //检查
-        if (TextUtils.isEmpty(account) || TextUtils.isEmpty(GudData.Login_PASSWORD)) {
-            showMsg("用户名，密码不合法，请核对后再试！");
-            return;
-        }
+            //检查
+            if (TextUtils.isEmpty(account) || TextUtils.isEmpty(GudData.Login_PASSWORD)) {
+                showMsg("用户名，密码不合法，请核对后再试！");
+                return;
+            }
 
-        /*保存密码到缓存中*/
-        if (mCheckBox.isChecked()) {
-            ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "checked");
-        } else {
-            ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "unchecked");
-        }
-        //默认内网，如果内网不可用自动切换到外网
+            /*保存密码到缓存中*/
+            if (mCheckBox.isChecked()) {
+                ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "checked");
+            } else {
+                ConfigUtils.saveData(this, null, GudData.KEY_REMEMBERPWD, "unchecked");
+            }
+            //默认内网，如果内网不可用自动切换到外网
 //		GudData.DOMAIN=NetConnect.testUrlWithTimeOut(GudData.LANIP,GudData.INTERNET,2000);
-        new UserPresenter().login(account, GudData.Login_PASSWORD, mac,"");
-        HideKeyboard();
-        showWaiting("登陆中，请稍后...");
+            new UserPresenter().login(account, GudData.Login_PASSWORD, mac,"");
+            HideKeyboard();
+            showWaiting("登陆中，请稍后...");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

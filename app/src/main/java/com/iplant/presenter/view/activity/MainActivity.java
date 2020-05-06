@@ -3,6 +3,7 @@ package com.iplant.presenter.view.activity;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -133,11 +134,13 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        EventBus.getDefault().register(this);
+        dl = (DragLayout) findViewById(R.id.dl);
+        togglebutton = (ToggleButton) findViewById(R.id.tbtn_Persontask);
 
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.SYSTEM_ALERT_WINDOW}, 1);
-
-
 
         if (GudData.mLoginState.equals(LoginState.Default))
         {
@@ -151,61 +154,42 @@ public class MainActivity extends BaseActivity {
             finish();
         }
 
-        setContentView(R.layout.activity_main);
-        EventBus.getDefault().register(this);
-        setVolumeControlStream(AudioManager.STREAM_MUSIC);
-
-        dl = (DragLayout) findViewById(R.id.dl);
-        togglebutton = (ToggleButton) findViewById(R.id.tbtn_Persontask);
         initView();
         initDragLayout();
-        new Thread() {
-            @Override
-            public void run() {
-                while (!GudData.mLoginState.equals(LoginState.Login)){
-                    try {
-                        sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
 
-                String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
-                try {
-                    myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                }
-                runOnUiThread(new Runnable() {
-                                  @Override
-                                  public void run() {
-                                      mName.setText("" + myAccount.name);
-                                      mAccount.setText(myAccount.account);
-                                      new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
-                                      startService(new Intent(MainActivity.this, RefreshService.class));
-                                  }
-                              }
-                );
-
-            }
-
-        }.start();
-
+        try {
+            String account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
+            myAccount = DBManage.queryBy(Account.class, GudData.KEY_Account, account);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        try {
+            mName.setText("" + myAccount.name);
+            mAccount.setText(myAccount.account);
+            new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
+            startService(new Intent(MainActivity.this, RefreshService.class));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
     private void PwdLessLogin() {
-        String  account="";
-      //   account = AESTool.decryptString(getIntent().getStringExtra("name"));
-        account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
-        String wToken=  DesUtil.CreateToken(account);
+        try {
+            String  account="";
+            //   account = AESTool.decryptString(getIntent().getStringExtra("name"));
+            account = ConfigUtils.getString(getApplicationContext(), null, GudData.KEY_Account);
+            String wToken=  DesUtil.CreateToken(account);
 
-        new UserPresenter().login(account, "", "0",wToken);
-        showWaiting("登陆中，请稍后...");
+            new UserPresenter().login(account, "", "0",wToken);
+            showWaiting("登陆中，请稍后...");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -234,80 +218,89 @@ public class MainActivity extends BaseActivity {
 
     private void initDragLayout() {
 
-        dl.setDragListener(new DragLayout.DragListener() {
-            @Override
-            public void onOpen() {
+        try {
+            dl.setDragListener(new DragLayout.DragListener() {
+                @Override
+                public void onOpen() {
 
-            }
-
-            @Override
-            public void onClose() {
-
-            }
-
-            @Override
-            public void onDrag(float percent) {
-
-            }
-        });
-
-
-        togglebutton.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                try {
-                    // 当按钮第一次被点击时候响应的事件
-                    if (togglebutton.isToggleOn()) {
-                        togglebutton.setToggleOff(true);
-                        mPerson_judge = 0;
-                    }
-                    // 当按钮再次被点击时候响应的事件
-                    else {
-                        togglebutton.setToggleOn(true);
-                        mPerson_judge = 1;
-                    }
-                    new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
-                } catch (Exception e) {
-                    e.printStackTrace();
                 }
-            }
-        });
+
+                @Override
+                public void onClose() {
+
+                }
+
+                @Override
+                public void onDrag(float percent) {
+
+                }
+            });
 
 
-        radioGroupShift.setOnCheckedChangeListener(
-                new RadioGroup.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
-                        switch (checkedId) {
-                            case R.id.radioButton_PreviousShift:
-                                GudData.mShift_Status = -1;
-                                break;
-                            case R.id.radioButton_CurrentShift:
-                                GudData.mShift_Status = 0;
-                                break;
-                            case R.id.radioButton_NextShift:
-                                GudData.mShift_Status = 1;
-                                break;
+            togglebutton.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    try {
+                        // 当按钮第一次被点击时候响应的事件
+                        if (togglebutton.isToggleOn()) {
+                            togglebutton.setToggleOff(true);
+                            mPerson_judge = 0;
                         }
+                        // 当按钮再次被点击时候响应的事件
+                        else {
+                            togglebutton.setToggleOn(true);
+                            mPerson_judge = 1;
+                        }
+                        new GroupPresenter().update(true, myAccount.encryptAccount, myAccount.encryptPwd);
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-
                 }
-        );
+            });
+
+
+            radioGroupShift.setOnCheckedChangeListener(
+                    new RadioGroup.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+                            switch (checkedId) {
+                                case R.id.radioButton_PreviousShift:
+                                    GudData.mShift_Status = -1;
+                                    break;
+                                case R.id.radioButton_CurrentShift:
+                                    GudData.mShift_Status = 0;
+                                    break;
+                                case R.id.radioButton_NextShift:
+                                    GudData.mShift_Status = 1;
+                                    break;
+                            }
+                        }
+
+                    }
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
     @Override
     protected void onDestroy() {
         // TODO Auto-generated method stub
-        super.onDestroy();
+        try {
+            super.onDestroy();
 
-        EventBus.getDefault().unregister(this);
+            EventBus.getDefault().unregister(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         //   stopService(new Intent(this, RefreshService.class));
     }
 
     private void initView() {
         try {
+            setVolumeControlStream(AudioManager.STREAM_MUSIC);
             ButterKnife.bind(this);
 
             mBack.setVisibility(View.GONE);
@@ -330,6 +323,8 @@ public class MainActivity extends BaseActivity {
 
         try {
             mGroupList = DBManage.queryAll(Group.class);
+            if(mGroupList.size()<5)
+                return;
             for (int i = 0; i < mGroupList.size(); i++) {
                 switch (i) {
                     case 0:
@@ -434,14 +429,18 @@ public class MainActivity extends BaseActivity {
 
     // 这个方法是关键，用来判断动画滑动的方向
     private void setCurrentTabWithAnim(int now, int next, String tag) {
-        if (now > next) {
-            tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_right_out));
-            tabHost.setCurrentTabByTag(tag);
-            tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_right_in));
-        } else {
-            tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_out));
-            tabHost.setCurrentTabByTag(tag);
-            tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_in));
+        try {
+            if (now > next) {
+                tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_right_out));
+                tabHost.setCurrentTabByTag(tag);
+                tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_right_in));
+            } else {
+                tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_out));
+                tabHost.setCurrentTabByTag(tag);
+                tabHost.getCurrentView().startAnimation(AnimationUtils.loadAnimation(this, R.anim.push_left_in));
+            }
+        } catch (Resources.NotFoundException e) {
+            e.printStackTrace();
         }
     }
 

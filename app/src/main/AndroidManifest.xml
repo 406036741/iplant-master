@@ -72,7 +72,6 @@
         <activity android:name=".presenter.view.activity.PwdChangeActivity" />
         <activity android:name=".presenter.view.activity.UserActivity" />
         <activity android:name=".presenter.view.activity.UserDetailActivity" />
-        <activity android:name=".libzxing.activity.QrCodeActivity" />
         <activity
             android:name=".presenter.view.activity.WebActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

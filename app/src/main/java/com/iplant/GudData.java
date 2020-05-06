@@ -22,10 +22,10 @@ public class GudData {
     public static final String KEY_ModuleID = "KEY_ModuleID";
     //地址栏
     //public static String DOMAIN = "http://193rt95681.imwork.net:55909/";
-    public static String DOMAIN = "http://2904u38a54.zicp.vip/MESCore/";
-    //public static String DOMAIN = "http://10.200.10.24:8080/MESCore/";
+   // public static String DOMAIN = "http://2229h607e3.wicp.vip/MESCore/";
+    public static String DOMAIN = "http://192.168.1.104:8080/MESCore/";
     //public static String DOMAIN = "http://192.168.31.137:8088/MESCore/";
-    //public static String DOMAIN = "http://10.200.255.171:8088/MESCore/";
+    // public static String DOMAIN = "http://10.200.10.24:8080/MESCore/";
     //内网地址
     public static final String LANIP = "http://192.168.10.251:8080/";
     public static LoginState mLoginState = LoginState.Default;

@@ -209,6 +209,9 @@ public class BaseActivity extends Activity implements DialogInterface.OnClickLis
     }
 
 
+
+
+
     @Override
     public void onClick(DialogInterface dialog, int which) {
         switch (mCurentDlgType) {
