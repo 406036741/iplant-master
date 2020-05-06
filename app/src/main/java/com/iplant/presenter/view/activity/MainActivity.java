@@ -1,5 +1,4 @@
 package com.iplant.presenter.view.activity;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -17,7 +16,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
 import android.widget.TextView;
-
 import com.iplant.GudData;
 import com.iplant.R;
 import com.iplant.model.Account;
@@ -33,13 +31,10 @@ import com.iplant.presenter.view.service.RefreshService;
 import com.iplant.presenter.view.widget.ToggleButton;
 import com.iplant.util.ConfigUtils;
 import com.iplant.util.DesUtil;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
-
 import java.sql.SQLException;
 import java.util.List;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
